@@ -1,0 +1,118 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "category": "Category",
+    "books": "Books",
+    "bookPdf": "Book Pdf",
+    "edition": "Editions",
+    "azerbaijani": "Azerbaijani Editions",
+    "turkish": "Turkish Editions",
+    "english": "English Editions",
+    "russian": "Russian Editions",
+    "genres": "Genres",
+    "detective": "Detective",
+    "philosophy": "Philosophy",
+    "mysticism": "Mysticism",
+    "novel": "Novel",
+    "writers": "Writers",
+    "azerbaijaniWriters": "Azerbaijani writers",
+    "worldWriters": "World writers",
+    "about": "About",
+    "contact": "Contact",
+    "membership": "Become Membership"
+  },
+  "header": {
+    "categoryPage": "Category page",
+    "homePage": "Home",
+    "placeholder": "Search..."
+  },
+  "footer": {
+    "privacy": "Privacy Policy Terms of Use",
+    "copyright": "Copyright 2024",
+    "reserve": " All Rights Reserved."
+  },
+  "profileModal": {
+    "hello": "Hello",
+    "available": "Available",
+    "profile": "My Profile",
+    "personal": "View personal profile details",
+    "edit": "Edit Profile",
+    "modify": "Modify your personal details",
+    "account": "Account settings",
+    "manage": "Manage your account parameters",
+    "privacyP": "Privacy settings",
+    "control": "Control your privacy parameters",
+    "signOut": "Sign out"
+  },
+  "cartModal": {
+    "carts": "All Carts",
+    "cart": "Your cart is empty",
+    "view": "View Cart",
+    "shop": "Shop now"
+  },
+  "bookDetail": {
+    "back": "Back to home page",
+    "description": "Books Description",
+    "author": "Author",
+    "add": "Add To Cart",
+    "read": "Read Sample",
+    "wishlist": "Add to Wishlist",
+    "share": "Share"
+  },
+  "bookSlideOne": {
+    "similar": "Similar Books",
+    "viewMore": "View More"
+  },
+  "bookSlideTwo": {
+    "trendy": "Trendy Books",
+    "viewMore": "View More"
+  },
+  "categorySearch": {
+    "searchBook": "Search by Book Name",
+    "all": "All",
+    "optionTwo": "Option 2",
+    "optionThree": "Option 3",
+    "optionFour": "Option 4",
+    "genres": "Genres",
+    "year": "Year",
+    "author": "Author",
+    "placeholderSearch": "Search here...",
+    "searchButton": "Search"
+  },
+  "categorySlideOne": {
+    "similar": "Similar Books",
+    "viewMore": "View More"
+  },
+  "categorySlideTwo": {
+    "trendy": "Trendy Books",
+    "viewMore": "View More"
+  },
+  "categorySlideThree": {
+    "favorite": "Favorite Books",
+    "viewMore": "View More"
+  },
+  "detailSection": {
+    "back": "Back to home page",
+    "description": "Books Description",
+    "author": "Author",
+    "add": "Add To Cart",
+    "read": "Read Sample",
+    "wishlist": "Add to Wishlist",
+    "share": "Share"
+  },
+  "cartSection": {
+    "shoppingCart": "Shopping Cart",
+    "emptyCart": "Your cart is empty",
+    "total": "Total"
+  },
+  "shopNowSection": {
+    "confirmText": "Confirm Your Order",
+    "name": "Name",
+    "nameInput": "Enter your name",
+    "mail": "Email",
+    "mailInput": "Enter your email",
+    "address": "Address",
+    "addressInput": "Enter your address",
+    "confirmButton": "Confirm Order"
+  }
+}

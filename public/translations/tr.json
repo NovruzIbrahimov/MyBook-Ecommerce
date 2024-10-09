@@ -1,0 +1,118 @@
+{
+  "sidebar": {
+    "home": "Ana sayfa",
+    "category": "Kategori sayfası",
+    "books": "Kitaplar",
+    "bookPdf": "Kitap Pdf'i",
+    "edition": "Yayınlar",
+    "azerbaijani": "Azerbaycan yayınları",
+    "turkish": "Türkçe baskılar",
+    "english": "İngilizce baskılar",
+    "russian": "Rus yayınları",
+    "genres": "Türler",
+    "detective": "Dedektif",
+    "philosophy": "Felsefe",
+    "mysticism": "Mistik",
+    "novel": "Roman",
+    "writers": "Yazarlar",
+    "azerbaijaniWriters": "Azerbaycanlı yazarlar",
+    "worldWriters": "Dünya yazarları",
+    "about": "Hakkımızda",
+    "contact": "Bize Ulaşın",
+    "membership": "Üye ol"
+  },
+  "header": {
+    "categoryPage": "Kategori sayfası",
+    "homePage": "Ana sayfa",
+    "placeholder": "Aramak..."
+  },
+  "footer": {
+    "privacy": "Gizlilik Politikası Kullanım Şartları",
+    "copyright": "Telif Hakkı 2024",
+    "reserve": "Her hakkı saklıdır."
+  },
+  "profileModal": {
+    "hello": "Merhaba",
+    "available": "Mevcut",
+    "profile": "Profilim",
+    "personal": "Kişisel profil bilgilerini görüntüleyin.",
+    "edit": "Profili düzenle",
+    "modify": "Kişisel bilgilerinizi değiştirin.",
+    "account": "Hesap ayarları",
+    "manage": "Hesap ayarlarınızı yönetin.",
+    "privacyP": "Gizlilik ayarları",
+    "control": "Gizlilik ayarlarınızı kontrol edin.",
+    "signOut": "Oturumu Kapat"
+  },
+  "cartModal": {
+    "carts": "Tüm kartlar",
+    "cart": "Sepetiniz boş",
+    "view": "Kitaba bak",
+    "shop": "Şimdi alışveriş yap"
+  },
+  "bookDetail": {
+    "back": "Ana sayfaya dön",
+    "description": "Kitapların açıklaması",
+    "author": "Yazar",
+    "add": "Sepete ekle",
+    "read": "Örneği okuyun",
+    "wishlist": "İstek listesine ekle",
+    "share": "Paylaş"
+  },
+  "bookSlideOne": {
+    "similar": "Benzer kitaplar",
+    "viewMore": "Daha fazlasını gör"
+  },
+  "bookSlideTwo": {
+    "trendy": "Trend olan kitaplar",
+    "viewMore": "Daha fazlasını gör"
+  },
+  "categorySearch": {
+    "searchBook": "Kitap başlığına göre ara",
+    "all": "Hepsi",
+    "optionTwo": "Seçenek 2",
+    "optionThree": "Seçenek 3",
+    "optionFour": "Seçenek 4",
+    "genres": "Türler",
+    "year": "Yıl",
+    "author": "Yazar",
+    "placeholderSearch": "burada ara...",
+    "searchButton": "Aramak"
+  },
+  "categorySlideOne": {
+    "similar": "Benzer kitaplar",
+    "viewMore": "Daha fazlasını gör"
+  },
+  "categorySlideTwo": {
+    "trendy": "Trend olan kitaplar",
+    "viewMore": "Daha fazlasını gör"
+  },
+  "categorySlideThree": {
+    "favorite": "Favori kitaplar",
+    "viewMore": "Daha fazlasını gör"
+  },
+  "detailSection": {
+    "back": "Ana sayfaya dön",
+    "description": "Kitapların açıklaması",
+    "author": "Yazar",
+    "add": "Sepete ekle",
+    "read": "Örneği okuyun",
+    "wishlist": "İstek listesine ekle",
+    "share": "Paylaş"
+  },
+  "cartSection": {
+    "shoppingCart": "Alışveriş Sepeti",
+    "emptyCart": "Sepetiniz boş",
+    "total": "Toplam"
+  },
+  "shopNowSection": {
+    "confirmText": "Siparişinizi Onaylayın",
+    "name": "İsim",
+    "nameInput": "İsminizi girin",
+    "mail": "E-posta",
+    "mailInput": "E-postanızı girin",
+    "address": "Adres",
+    "addressInput": "Adresinizi girin",
+    "confirmButton": "Siparişi Onayla"
+  }
+}

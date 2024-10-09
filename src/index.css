@@ -1,0 +1,16 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* 
+color: #0DD6B8; yasil
+color: #11141B; qara
+color: @FBFCFF; ag
+color: #ff9b8a; pembe
+color: #777D74; qara-boz
+*/

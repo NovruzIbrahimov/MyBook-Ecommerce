@@ -1,0 +1,118 @@
+{
+  "sidebar": {
+    "home": "Ana səhifə",
+    "category": "Kateqoriya səhifəsi",
+    "books": "Kitablar",
+    "bookPdf": "Kitab Pdf",
+    "edition": "Nəşrlər",
+    "azerbaijani": "Azərbaycan nəşrləri",
+    "turkish": "Türkiyə nəşrləri",
+    "english": "İngilis nəşrləri",
+    "russian": "Rus nəşrləri",
+    "genres": "Janrlar",
+    "detective": "Detektiv",
+    "philosophy": "Fəlsəfə",
+    "mysticism": "Mistika",
+    "novel": "Roman",
+    "writers": "Yazıçılar",
+    "azerbaijaniWriters": "Azərbaycan yazıçıları",
+    "worldWriters": "Dünya yazıçıları",
+    "about": "Haqqımızda",
+    "contact": "Bizimlə əlaqə",
+    "membership": "Üzv olmaq"
+  },
+  "header": {
+    "categoryPage": "Kateqoriya səhifəsi",
+    "homePage": "Ana səhifə",
+    "placeholder": "Axtar..."
+  },
+  "footer": {
+    "privacy": "Məxfilik Siyasəti İstifadə Şərtləri",
+    "copyright": "Müəllif hüququ 2024",
+    "reserve": "Bütün Hüquqlar Qorunur."
+  },
+  "profileModal": {
+    "hello": "Salam",
+    "available": "Mövcüddur",
+    "profile": "Profilim",
+    "personal": "Şəxsi profil məlumatlarına baxın.",
+    "edit": "Profili redaktə edin",
+    "modify": "Şəxsi məlumatlarınızı dəyişdirin.",
+    "account": "Hesab parametrləri",
+    "manage": "Hesab parametrlərinizi idarə edin.",
+    "privacyP": "Məxfilik parametrləri",
+    "control": "Məxfilik parametrlərinizə nəzarət edin.",
+    "signOut": "Çıxış edin"
+  },
+  "cartModal": {
+    "carts": "Bütün kartlar",
+    "cart": "Səbətiniz boşdur",
+    "view": "Səbətə baxmaq",
+    "shop": "İndi alış-veriş et"
+  },
+  "bookDetail": {
+    "back": "Ana səhifəyə dön",
+    "description": "Kitabların təsviri",
+    "author": "Müəllif",
+    "add": "Səbətə əlavə et",
+    "read": "Nümunə oxuyun",
+    "wishlist": "İstək siyahısına əlavə edin",
+    "share": "Paylaş"
+  },
+  "bookSlideOne": {
+    "similar": "Oxşar kitablar",
+    "viewMore": "Daha çox baxın"
+  },
+  "bookSlideTwo": {
+    "trendy": "Trend kitablar",
+    "viewMore": "Daha çox baxın"
+  },
+  "categorySearch": {
+    "searchBook": "Kitab adına görə axtarın",
+    "all": "Hamısı",
+    "optionTwo": "Seçim 2",
+    "optionThree": "Seçim 3",
+    "optionFour": "Seçim 4",
+    "genres": "Janrlar",
+    "year": "İl",
+    "author": "Müəllif",
+    "placeholderSearch": "burada axtar...",
+    "searchButton": "Axtar"
+  },
+  "categorySlideOne": {
+    "similar": "Oxşar kitablar",
+    "viewMore": "Daha çox baxın"
+  },
+  "categorySlideTwo": {
+    "trendy": "Trend kitablar",
+    "viewMore": "Daha çox baxın"
+  },
+  "categorySlideThree": {
+    "favorite": "Sevimli kitablar",
+    "viewMore": "Daha çox baxın"
+  },
+  "detailSection": {
+    "back": "Ana səhifəyə dön",
+    "description": "Kitabların təsviri",
+    "author": "Müəllif",
+    "add": "Səbətə əlavə et",
+    "read": "Nümunə oxuyun",
+    "wishlist": "İstək siyahısına əlavə edin",
+    "share": "Paylaş"
+  },
+  "cartSection": {
+    "shoppingCart": "Alış-veriş səbəti",
+    "emptyCart": "Səbətiniz boşdur",
+    "total": "Cəmi"
+  },
+  "shopNowSection": {
+    "confirmText": "Sifarişinizi Təsdiqləyin",
+    "name": "Ad",
+    "nameInput": "Adınızı daxil edin",
+    "mail": "E-poçt",
+    "mailInput": "E-poçtu daxil edin",
+    "address": "Ünvan",
+    "addressInput": "Ünvanı daxil edin",
+    "confirmButton": "Sifarişi təsdiqlə"
+  }
+}

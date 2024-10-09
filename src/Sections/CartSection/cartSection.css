@@ -1,0 +1,7 @@
+.cartSection {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 15px 15px 25px 15px;
+  border: none;
+}

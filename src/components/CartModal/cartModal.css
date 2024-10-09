@@ -1,0 +1,74 @@
+div.modal-header {
+  background-color: #0dd6b8;
+  color: #ffffff;
+}
+
+button.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.cart-item {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cart-image {
+  width: 50px;
+  height: 66px;
+  object-fit: contain;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.cart-item-text h6 {
+  font-weight: bolder;
+  color: #11141b;
+}
+
+.cart-item-text p {
+  color: #777d74;
+}
+
+.remove {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff9b8a;
+}
+
+.btn-view {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0dd6b8;
+  border: 1px solid #0dd6b8;
+  border-radius: 5px;
+  padding: 6px 16px;
+  transition: 0.3s;
+}
+
+.btn-view:hover {
+  color: #ffffff;
+  background-color: #0aab93;
+  border: 1px solid #0aab93;
+}
+
+.btn-shop {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0dd6b8;
+  border: 1px solid #0dd6b8;
+  border-radius: 5px;
+  padding: 6px 16px;
+  transition: 0.3s;
+}
+
+.btn-shop:hover {
+  color: #ffffff;
+  background-color: #0aab93;
+  border: 1px solid #0aab93;
+}

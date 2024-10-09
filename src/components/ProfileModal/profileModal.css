@@ -1,0 +1,47 @@
+.profile-option {
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-option:last-child {
+  border-bottom: none;
+}
+
+.profile-option .profile-option-icon {
+  width: 45px;
+  height: 45px;
+  line-height: 40px;
+  font-size: 25px;
+  color: #0dd6b8;
+}
+
+.profile-option h6.mb-0 {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #11141b;
+}
+
+.profile-option p.mb-0 {
+  margin: 0;
+  font-size: 13px;
+  color: #777d74;
+}
+
+.btn-signOut {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0dd6b8;
+  border: 1px solid #0dd6b8;
+  border-radius: 5px;
+  padding: 6px 16px;
+  transition: 0.3s;
+}
+
+.btn-signOut:hover {
+  color: #ffffff;
+  background-color: #0aab93;
+  border: 1px solid #0aab93;
+}

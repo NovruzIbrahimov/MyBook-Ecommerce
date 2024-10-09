@@ -1,0 +1,52 @@
+.app {
+  display: flex;
+}
+
+.main-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: 320px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar-open .main-section {
+  margin-left: 320px;
+}
+
+.sidebar-closed .main-section {
+  margin-left: 50px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .main-section {
+    margin-left: 0;
+  }
+
+  .app.small-screen .main-section {
+    margin-left: 0;
+  }
+
+  .app.small-screen .content,
+  .app.small-screen .header,
+  .app.small-screen .footer {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
