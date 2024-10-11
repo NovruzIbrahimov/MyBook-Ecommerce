@@ -19,6 +19,11 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
         {isOpen && (
           <div className="menu-items">
             <ul>
+            <li>
+                <Link to="/" onClick={toggleSidebar}>
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link to="/category" onClick={toggleSidebar}>
                   Category

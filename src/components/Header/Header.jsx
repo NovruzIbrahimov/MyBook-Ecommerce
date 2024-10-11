@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "../Header/header.css";
 import { FaBell, FaShoppingCart, FaEnvelope, FaGlobe } from "react-icons/fa";
 import CartModal from "../CartModal/CartModal";
 import ProfileModal from "../ProfileModal/ProfileModal";
 import ImageProfile from "../../assets/headerProfile.jpg";
+import { CartContext } from "../../context/CartContext";
 
 function Header({ toggleSidebar, isSmallScreen }) {
   const [showCartModal, setShowCartModal] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
+
+  const { cartItems } = useContext(CartContext);
+  const cartItemCount = cartItems.length;
 
   const handleCartClick = () => setShowCartModal(true);
   const handleProfileClick = () => setShowProfileModal(true);
@@ -33,12 +37,12 @@ function Header({ toggleSidebar, isSmallScreen }) {
 
           <div className="header-right">
             <div className="icons">
-              <FaGlobe />
-              <FaBell className="icon" />
-              <FaEnvelope className="icon" />
+              <FaGlobe className="globe-icon"/>
+              <FaBell className="bell-icon" />
+              <FaEnvelope className="envelope-icon" />
               <div className="cart-icon-container">
-                <FaShoppingCart className="icon" onClick={handleCartClick} />
-                <span className="cart-count">0</span>{" "}
+                <FaShoppingCart className="shopping-icon" onClick={handleCartClick} />
+                {cartItemCount > 0 && <span className="cart-count">{cartItemCount}</span>}
               </div>
             </div>
 

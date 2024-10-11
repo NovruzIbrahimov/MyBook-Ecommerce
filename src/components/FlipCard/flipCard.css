@@ -20,7 +20,6 @@
   transform: rotateY(180deg);
 }
 
-/* Front of the card */
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -40,7 +39,6 @@
   object-fit: cover;
 }
 
-/* Back of the card */
 .flip-card-back {
   background-color: #f8f9fa;
   color: #333;
@@ -51,27 +49,41 @@
 }
 
 .card-content {
+  width: 100%;
   text-align: center;
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
   margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .card-description {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0dd6b8;
   margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .stars {
   font-size: 1.2rem;
-  color: #ffc107;
+  color: #f16a1b;
   margin-bottom: 10px;
 }
 
 .card-price {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #000000;
   margin-bottom: 15px;
 }
 
@@ -99,6 +111,14 @@ button.btn.add-to-cart {
   transition: transform 0.4s ease-in-out, opacity 0.4s;
   opacity: 0;
   transform: translateY(20px);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button.btn.add-to-cart:hover {
+  color: white;
+  background-color: #0da58e;
+  border: 1px solid #0da58e;
 }
 
 .flip-card-inner.flipped button.btn.add-to-cart {
@@ -108,7 +128,7 @@ button.btn.add-to-cart {
 
 @media (max-width: 1024px) {
   .card-title {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .card-description {
@@ -134,7 +154,7 @@ button.btn.add-to-cart {
 
 @media (max-width: 768px) {
   .card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .card-description {

@@ -5,3 +5,256 @@
   padding: 15px 15px 25px 15px;
   border: none;
 }
+
+.detailSection .container a {
+  text-decoration: none;
+}
+
+.detailSection p.link-p {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0dd6b8;
+}
+
+h4.detail-text {
+  border-bottom: 1px solid #ededf0;
+  font-size: 23px;
+  color: #11141b;
+}
+
+.detail-left-description-left .sidebar-img {
+  width: 100%;
+  height: auto;
+  max-width: 110px;
+  max-height: 142px;
+}
+
+.detail-left-description-right img.main-img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-right-description h3 {
+  font-size: 32px;
+  color: #11141b;
+}
+
+p.text-muted strong {
+  font-size: 24px;
+  color: #3f414d;
+}
+
+.detail-right-description .stars span.fa-star {
+  font-size: 23px;
+  color: #ffc107;
+  margin: 0 10px 0 0;
+}
+
+.detail-right-description p {
+  font-size: 18px;
+  color: #3f414d;
+}
+
+p.text-muted-add {
+  color: #777d74;
+}
+
+p.text-muted-add strong {
+  color: #0dd6b8;
+}
+
+button.btn-one {
+  color: #ffffff;
+  background-color: #0dd6b8;
+  border: 1px solid #0dd6b8;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+button.btn-two {
+  color: #ffffff;
+  background-color: #0dd6b8;
+  border: 1px solid #0dd6b8;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+button.btn-three {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #ff9b8a;
+  border: 1px solid #ff9b8a;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+span.icon {
+  font-size: 19px;
+  font-weight: bold;
+  color: #11141b;
+  margin-right: 5px;
+}
+
+.btn-link-facebook {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #3b5998;
+  border-radius: 50%;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.btn-link-twitter {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #00acee;
+  border-radius: 50%;
+  padding: 8px 10px;
+  text-align: center;
+  margin-left: 0;
+}
+
+.btn-link-youtube {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 50%;
+  padding: 8px 10px;
+  text-align: center;
+  margin-left: 0;
+}
+
+.btn-link-pinterest {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #e60023;
+  border-radius: 50%;
+  padding: 8px 10px;
+  text-align: center;
+  margin-left: 0;
+}
+
+.alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .detail-left-description-right img.main-img {
+    max-width: 350px;
+  }
+
+  .detail-right-description h3 {
+    font-size: 32px;
+  }
+
+  p.text-muted strong {
+    font-size: 24px;
+  }
+
+  button.btn-one,
+  button.btn-two {
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detailSection {
+    padding: 15px 10px;
+  }
+
+  .detail-left-description-left {
+    margin-bottom: 20px;
+  }
+
+  .detail-left-description-right img.main-img {
+    max-width: 250px;
+  }
+
+  .detail-right-description h3 {
+    font-size: 28px;
+  }
+
+  .detail-right-description .stars span.fa-star {
+    font-size: 20px;
+  }
+
+  p.text-muted strong {
+    font-size: 22px;
+  }
+
+  button.btn-one,
+  button.btn-two {
+    padding: 10px;
+  }
+
+  .btn-link-facebook,
+  .btn-link-twitter,
+  .btn-link-youtube,
+  .btn-link-pinterest {
+    margin: 0 5px 10px;
+  }
+
+  span.icon {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .detail-left-description-left {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .detail-left-description-right img.main-img {
+    max-width: 200px;
+  }
+
+  .detail-right-description h3 {
+    font-size: 20px;
+  }
+
+  .detail-right-description p {
+    font-size: 14px;
+  }
+
+  p.text-muted strong {
+    font-size: 16px;
+  }
+
+  button.btn-one,
+  button.btn-two,
+  button.btn-three {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .btn-link-facebook,
+  .btn-link-twitter,
+  .btn-link-youtube,
+  .btn-link-pinterest {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}

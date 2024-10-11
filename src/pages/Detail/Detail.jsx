@@ -1,5 +1,6 @@
 import React from "react";
 import "../Detail/detail.css";
+import DetailSection from "../../Sections/DetailSection/DetailSection";
 
 function Detail() {
   return (

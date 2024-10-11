@@ -1,34 +1,49 @@
 import React, { useState } from "react";
 import "../FlipCard/flipCard.css";
-import ImageFlip from "../../assets/01.jpg";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
-function FlipCard() {
+function FlipCard({id, imageUrl, title1, title2, price, quantity}) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setIsFlipped(!isFlipped);
   };
+
+  const handleViewBook = () => {
+    navigate(`/detail/${id}`, {
+      state: {
+        id,
+        imageUrl,
+        title1,
+        title2,
+        price,
+        quantity,
+      },
+    });
+  };
+
   return (
     <div className="flip-card" onClick={handleClick}>
       <div className={`flip-card-inner ${isFlipped ? "flipped" : ""}`}>
         <div className="flip-card-front">
-          <img src={ImageFlip} alt="Front" className="card-img" />
+          <img src={imageUrl} alt="Front" className="card-img" />
         </div>
 
         <div className="flip-card-back">
           <div className="card-content">
-            <h1 className="card-title">Product Name</h1>
+            <h1 className="card-title">{title1}</h1>
             <p className="card-description">
-              This is a fantastic product that you'll love!
+              {title2}
             </p>
             <div className="stars">⭐⭐⭐⭐⭐</div>
-            <p className="card-price">$49.99</p>
+            <p className="card-price">{price} Azn</p>
             <div className="card-icons">
               <FaShoppingCart className="card-icons-shopping" />
               <FaHeart className="card-icons-heart" />
             </div>
-            <button className="btn add-to-cart">Add to Cart</button>
+            <button className="btn add-to-cart" onClick={handleViewBook}>View Book</button>
           </div>
         </div>
       </div>

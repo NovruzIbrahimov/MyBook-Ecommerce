@@ -1,5 +1,4 @@
 .footer {
-  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,13 +10,12 @@
 .footer-left h1 {
   font-size: 18px;
   font-weight: bolder;
-  margin: 0;
+  /* margin-top: 10px; */
 }
 
 .footer-right p {
   font-size: 18px;
   font-weight: bolder;
-  margin: 0;
 }
 
 .footer-right a {
@@ -33,7 +31,6 @@
 
   .footer-right p {
     font-size: 14px;
-    margin-top: 10px;
   }
 
   .footer-right a {
@@ -45,7 +42,6 @@
 @media (max-width: 393px) {
   .footer-right p {
     font-size: 14px;
-    margin-top: 10px;
   }
 
   .footer-right a {

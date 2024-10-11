@@ -5,3 +5,15 @@
   padding: 15px 15px 25px 15px;
   border: none;
 }
+
+.bookCardsOne .left-text h4 {
+  font-size: 22.4px;
+  font-weight: bold;
+  color: #11141b;
+}
+
+.bookCardsOne .right-text button.btn {
+  border: none;
+  color: #ffffff;
+  background-color: #0dd6b8;
+}

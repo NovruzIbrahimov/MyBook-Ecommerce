@@ -14,6 +14,11 @@ button.btn-close:focus {
   border-radius: 5px;
 }
 
+div.modal-body {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
 .cart-image {
   width: 50px;
   height: 66px;
@@ -71,4 +76,100 @@ button.btn-close:focus {
   color: #ffffff;
   background-color: #0aab93;
   border: 1px solid #0aab93;
+}
+
+@media (max-width: 1024px) {
+  div.modal-title.h4 {
+    font-size: 21px;
+  }
+  .cart-item {
+    padding: 8px;
+  }
+
+  .cart-image {
+    width: 45px;
+    height: 60px;
+    margin-right: 8px;
+  }
+
+  .remove {
+    font-size: 28px;
+  }
+
+  .btn-view,
+  .btn-shop {
+    font-size: 14px;
+    padding: 5px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  div.modal-body {
+    max-height: 350px;
+    overflow-y: auto;
+  }
+
+  .cart-item {
+    padding: 7px;
+  }
+
+  .cart-image {
+    width: 40px;
+    height: 55px;
+    margin-right: 7px;
+  }
+
+  .remove {
+    font-size: 26px;
+  }
+
+  .btn-view,
+  .btn-shop {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+
+  .cart-item-text h6 {
+    font-size: 14px;
+  }
+
+  .cart-item-text p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  div.modal-title.h4 {
+    font-size: 18px;
+  }
+
+  div.modal-body {
+    max-height: 412px;
+    overflow-y: auto;
+  }
+
+  .cart-image {
+    width: 50px;
+    height: 66px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+
+  .cart-item-text h6 {
+    font-size: 13px;
+  }
+
+  .cart-item-text p {
+    font-size: 11px;
+  }
+
+  .remove {
+    font-size: 24px;
+  }
+
+  .btn-view,
+  .btn-shop {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
 }

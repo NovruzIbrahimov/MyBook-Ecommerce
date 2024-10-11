@@ -1,0 +1,93 @@
+.shop-card {
+  width: 150px;
+  height: 225px;
+  padding: 8px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.shop-card-img-top {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px 8px 0 0;
+}
+
+.shop-card-body {
+  padding: 8px;
+  font-size: 0.85rem;
+  flex-grow: 1;
+}
+
+.shop-card-title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #11141b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.shop-card-text {
+  font-size: 0.8rem;
+  color: #777d74;
+}
+
+.shop-card-text-price {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #11141b;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #0dd6b8;
+}
+
+input.form-control {
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.shop-alert {
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.shop-alert-success {
+  background-color: #3917cf;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.shop-alert-danger {
+  background-color: #be1313;
+  color: #f3f3f3;
+  border: 1px solid #f5c6cb;
+}
+
+button.btn-confirm {
+  background-color: #0dd6b8;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+button.btn-confirm:hover {
+  background-color: #0dd6b8;
+}
