@@ -14,12 +14,21 @@
   border-right: 1px solid #fbfcff;
 }
 
+.sidebar-content {
+  padding: 0 11px 0 20px;
+}
+
 .sidebar.closed {
   width: 50px;
 }
 
 .sidebar.open {
   width: 320px;
+}
+
+.sidebar-logo {
+  width: 100px;
+  margin: 10px;
 }
 
 .burger-btn {
@@ -35,9 +44,25 @@
 }
 
 .menu-items {
-  margin-top: 50px;
-  padding: 10px;
-  color: white;
+  margin-top: 30px;
+}
+
+.menu-items h3 {
+  font-size: 18px;
+  letter-spacing: 1;
+  color: #11141b;
+}
+
+img.img-fluid {
+  width: 250px;
+}
+
+.bottom-part button.btn {
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #0dd6b8;
+  padding: 7px 50px;
+  border: 1px solid #0dd6b8;
 }
 
 @media (max-width: 1024px) {
