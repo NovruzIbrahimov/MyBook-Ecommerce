@@ -78,3 +78,8 @@ a.nav-link {
 .arrow.expanded {
   transform: rotate(0deg);
 }
+
+.active-link {
+  color: #0dd6b8; 
+  font-weight: bold; 
+}

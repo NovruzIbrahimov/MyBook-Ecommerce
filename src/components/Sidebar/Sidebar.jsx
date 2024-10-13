@@ -1,6 +1,8 @@
 import React from "react";
 import "../Sidebar/sidebar.css";
+import "../SidebarNavItem/sidebarNavItem.css";
 import SidebarNavItem from "../SidebarNavItem/SidebarNavItem";
+import { Link } from "react-router-dom";
 
 function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
   return (
@@ -10,11 +12,14 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
       }`}
     >
       <div className="sidebar-content">
-        <img
-          src="https://e7.pngegg.com/pngimages/142/76/png-clipart-white-and-orange-book-logo-symbol-yellow-orange-logo-ibooks-orange-logo.png"
-          alt="Logo"
-          className="sidebar-logo"
-        />
+        <Link to="/">
+          <img
+            src="src/assets/eazyaz.png"
+            alt="Logo"
+            className="sidebar-logo"
+          />
+        </Link>
+
         <button className="burger-btn" onClick={toggleSidebar}>
           &#9776; {/* Burger icon */}
         </button>

@@ -34,6 +34,7 @@ div.modal-body {
 
 .cart-item-text p {
   color: #777d74;
+  font-weight: 600;
 }
 
 .remove {
@@ -161,6 +162,7 @@ div.modal-body {
 
   .cart-item-text p {
     font-size: 11px;
+    font-weight: bolder;
   }
 
   .remove {

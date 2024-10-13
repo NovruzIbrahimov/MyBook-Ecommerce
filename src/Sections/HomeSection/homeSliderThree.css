@@ -5,3 +5,192 @@
   padding: 15px 15px 25px 15px;
   border: none;
 }
+
+.expanded-hero-section .hero-section {
+  background: url("https://templates.iqonic.design/booksto-dist/html/assets/images/browse-books/09.jpg")
+    no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.expanded-hero-section .hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.expanded-hero-section .hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.expanded-hero-section .hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.expanded-hero-section button.btn.btn-primary {
+  background-color: #ff7f50;
+  border-color: #ff7f50;
+}
+
+.expanded-hero-section .btn-primary:hover {
+  background-color: #ff6347;
+  border-color: #ff6347;
+}
+
+.features-section {
+  background-color: #f9f9f9;
+}
+
+.features-section .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.feature-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-box p {
+  color: #777d74;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.feature-box i {
+  color: #ff7f50;
+}
+
+.newsletter-section {
+  background-color: #f0f8ff;
+}
+
+.newsletter-section .section-title {
+  font-size: 2rem;
+}
+
+.newsletter-section .section-subtitle {
+  color: #777d74;
+  font-weight: bolder;
+}
+
+.newsletter-form input {
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.newsletter-form .newsletter-btn {
+  background-color: #0dd6b8;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.newsletter-form .newsletter-btn:hover {
+  background-color: #0dc2a7;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.quote-section {
+  background-color: #11141b;
+  color: white;
+}
+
+.quote-section blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.cta-section {
+  background-color: #333;
+}
+
+.cta-section .btn-light {
+  background-color: #0dd6b8;
+  border-color: #0dd6b8;
+  color: #fff;
+}
+
+.cta-section .btn-light:hover {
+  background-color: #0dc2a7;
+  border-color: #0dc2a7;
+}
+
+@media (max-width: 768px) {
+  .expanded-hero-section .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .expanded-hero-section .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .expanded-hero-section .hero-section {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .expanded-hero-section .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .expanded-hero-section .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .expanded-hero-section .hero-section {
+    height: 70vh;
+  }
+
+  .features-section h2.section-title {
+    font-size: 22px;
+  }
+
+  .feature-box h4 {
+    font-size: 16px;
+  }
+
+  .feature-box p {
+    font-size: 14px;
+  }
+
+  .newsletter-section h2.section-title {
+    font-size: 25px;
+  }
+
+  .newsletter-section .section-subtitle {
+    font-size: 14px;
+  }
+
+  .quote-section blockquote {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  footer.blockquote-footer {
+    font-size: 15px;
+  }
+
+  .cta-section h2.section-title {
+    font-size: 20px;
+  }
+
+  .cta-section .btn-light {
+    font-size: 18px;
+  }
+}

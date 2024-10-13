@@ -7,6 +7,7 @@ import { RiAdminLine } from "react-icons/ri";
 import { FaRegUserCircle } from "react-icons/fa";
 import { RiPagesLine } from "react-icons/ri";
 import { FaBook } from "react-icons/fa";
+import { PiLineVerticalBold } from "react-icons/pi";
 
 function SidebarNavItem() {
   const [openHome, setOpenHome] = useState(false);
@@ -16,68 +17,84 @@ function SidebarNavItem() {
   const [openGenre, setOpenGenre] = useState(false);
   const [openAuthor, setOpenAuthor] = useState(false);
 
+  const [activeLink, setActiveLink] = useState("home");
+
   return (
     <Nav className="flex-column mb-4">
       <Nav.Item>
         <Nav.Link
           href="/"
-          onClick={() => setOpenHome(!openHome)}
+          onClick={() => {
+            setOpenHome(!openHome);
+            setActiveLink("home");
+          }}
           aria-controls="home-collapse"
           aria-expanded={openHome}
-          className="d-flex align-items-center justify-content-between"
+          className={`d-flex align-items-center justify-content-between ${
+            activeLink === "home" ? "active-link" : ""
+          }`}
         >
           <div className="d-flex align-items-center text">
             <FaHome className="me-4" />
             <span>Home Page</span>
           </div>
-          <FaChevronRight
-            className={`arrow ${openHome ? "collapsed" : "expanded"}`}
-          />
+          <PiLineVerticalBold className="arrow" />
         </Nav.Link>
       </Nav.Item>
 
       <Nav.Item>
         <Nav.Link
           href="/category"
-          onClick={() => setOpenCategory(!openCategory)}
+          onClick={() => {
+            setOpenCategory(!openCategory);
+            setActiveLink("category");
+          }}
           aria-controls="category-collapse"
           aria-expanded={openCategory}
-          className="d-flex align-items-center justify-content-between"
+          className={`d-flex align-items-center justify-content-between ${
+            activeLink === "category" ? "active-link" : ""
+          }`}
         >
           <div className="d-flex align-items-center text">
             <RiAdminLine className="me-4" />
             <span>Category</span>
           </div>
-          <FaChevronRight
-            className={`arrow ${openCategory ? "collapsed" : "expanded"}`}
-          />
+          <PiLineVerticalBold className="arrow" />
         </Nav.Link>
       </Nav.Item>
 
       <Nav.Item>
         <Nav.Link
           href="/book"
-          onClick={() => setOpenBook(!openBook)}
+          onClick={() => {
+            setOpenBook(!openBook);
+            setActiveLink("book");
+          }}
           aria-controls="book-collapse"
           aria-expanded={openBook}
-          className="d-flex align-items-center justify-content-between"
+          className={`d-flex align-items-center justify-content-between ${
+            activeLink === "book" ? "active-link" : ""
+          }`}
         >
           <div className="d-flex align-items-center text">
             <FaBook className="me-4" />
             <span>Book</span>
           </div>
-          <FaChevronRight
-            className={`arrow ${openBook ? "collapsed" : "expanded"}`}
-          />
+          <PiLineVerticalBold className="arrow" />
         </Nav.Link>
       </Nav.Item>
 
       <Nav.Item>
         <Nav.Link
-          onClick={() => setOpenEdition(!openEdition)}
+          onClick={() => {
+            setOpenEdition(!openEdition);
+            setActiveLink("edition");
+          }}
           aria-controls="admin-collapse"
           aria-expanded={openEdition}
-          className="d-flex align-items-center justify-content-between"
+          className={`d-flex align-items-center justify-content-between ${
+            activeLink === "edition" ? "active-link" : ""
+          }`}
         >
           <div className="d-flex align-items-center text">
             <RiAdminLine className="me-4" />
@@ -101,10 +118,15 @@ function SidebarNavItem() {
 
       <Nav.Item>
         <Nav.Link
-          onClick={() => setOpenGenre(!openGenre)}
+          onClick={() => {
+            setOpenGenre(!openGenre);
+            setActiveLink("genre");
+          }}
           aria-controls="user-collapse"
           aria-expanded={openGenre}
-          className="d-flex align-items-center justify-content-between"
+          className={`d-flex align-items-center justify-content-between ${
+            activeLink === "genre" ? "active-link" : ""
+          }`}
         >
           <div className="d-flex align-items-center text">
             <FaRegUserCircle className="me-4" />
@@ -128,10 +150,15 @@ function SidebarNavItem() {
 
       <Nav.Item>
         <Nav.Link
-          onClick={() => setOpenAuthor(!openAuthor)}
+          onClick={() => {
+            setOpenAuthor(!openAuthor);
+            setActiveLink("author");
+          }}
           aria-controls="elements-collapse"
           aria-expanded={openAuthor}
-          className="d-flex align-items-center justify-content-between"
+          className={`d-flex align-items-center justify-content-between ${
+            activeLink === "author" ? "active-link" : ""
+          }`}
         >
           <div className="d-flex align-items-center text">
             <RiPagesLine className="me-4" />

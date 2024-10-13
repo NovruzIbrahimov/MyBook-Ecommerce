@@ -13,7 +13,7 @@ function CategoryCardTwo() {
     });
   };
   return (
-    <div className="categoryCardTwo mb-4">
+    <div className="categoryCardTwo mb-4 ">
       <div className="container">
         <div className="container-slide d-flex justify-content-between align-items-center mb-4">
           <div className="left-text">

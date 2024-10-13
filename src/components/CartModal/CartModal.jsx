@@ -51,7 +51,7 @@ function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
                 <img src={item.imageUrl} className="cart-image" />
                 <div className="cart-item-text">
                   <h6 className="mb-0">{item.title1}</h6>
-                  <p className="mb-0">{item.price}Azn</p>
+                  <p className="mb-0">{item.price} Azn</p>
                 </div>
               </div>
               <button

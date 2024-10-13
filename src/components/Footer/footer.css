@@ -1,10 +1,15 @@
 .footer {
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fbfcff;
   border-top: 1px solid #ededf0;
   box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer .container {
+  padding: 10px 0 10px 0;
 }
 
 .footer-left h1 {

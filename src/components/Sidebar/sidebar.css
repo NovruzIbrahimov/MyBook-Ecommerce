@@ -26,7 +26,7 @@
   width: 320px;
 }
 
-.sidebar-logo {
+img.sidebar-logo {
   width: 100px;
   margin: 10px;
 }
@@ -63,6 +63,24 @@ img.img-fluid {
   background-color: #0dd6b8;
   padding: 7px 50px;
   border: 1px solid #0dd6b8;
+}
+
+@media (min-width: 1024px) {
+  .sidebar.closed {
+    width: 50px;
+  }
+   
+  .sidebar.closed .sidebar-content .sidebar-logo {
+    display: none;
+  }
+
+  .sidebar.closed .sidebar-content .menu-items div.flex-column.mb-4.nav .text span {
+    display: none;
+  }
+
+  .sidebar.closed .sidebar-content .menu-items div.flex-column.mb-4.nav .text .me-4{
+    padding: 15px;
+  }
 }
 
 @media (max-width: 1024px) {
