@@ -7,7 +7,7 @@
 }
 
 .expanded-hero-section .hero-section {
-  background: url("https://templates.iqonic.design/booksto-dist/html/assets/images/browse-books/09.jpg")
+  background: url("https://img.freepik.com/premium-photo/3d-rendered-photos-logo-website-that-talks-about-books-opened-book-turning-pages_1096167-53725.jpg")
     no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -55,6 +55,7 @@
 }
 
 .feature-box {
+  height: 170px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -62,8 +63,19 @@
   cursor: pointer;
 }
 
+.feature-box h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .feature-box p {
   color: #777d74;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .feature-box:hover {
@@ -192,5 +204,12 @@
 
   .cta-section .btn-light {
     font-size: 18px;
+  }
+  .cta-section .btn-light {
+    background-color: #0dd6b8;
+    border-color: #0dd6b8;
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 13px;
   }
 }

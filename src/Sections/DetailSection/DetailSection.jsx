@@ -10,8 +10,10 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function DetailSection() {
+  const {t} = useTranslation();
   const location = useLocation();
   const book = location.state;
   const { addToCart } = useContext(CartContext);
@@ -29,9 +31,9 @@ function DetailSection() {
     <div className="detailSection mt-4 mb-4">
       <div className="container mt-4 mb-4">
         <Link to="/category">
-          <p className="link-p">Back to home page</p>
+          <p className="link-p">{t("detailSection.back")}</p>
         </Link>
-        <h4 className="detail-text pb-3">Books Description</h4>
+        <h4 className="detail-text pb-3">{t("detailSection.description")}</h4>
         <div className="row">
           <div className="col-lg-5 col-md-12 col-sm-12 d-flex flex-column align-items-stretch detail-left-description">
             <div className="row">
@@ -80,19 +82,19 @@ function DetailSection() {
               industry and is a test to find in the printing industry.
             </p>
             <p className="text-muted-add">
-              <strong>Author:</strong> {book.title2}
+              <strong>{t("detailSection.author")}:</strong> {book.title2}
             </p>
             <div className="d-flex gap-2 mt-2">
               <button className="btn-one me-2" onClick={handleAddToCart}>
-                Add To Cart
+              {t("detailSection.add")}
               </button>
-              <button className="btn-two">Read Sample</button>
+              <button className="btn-two">{t("detailSection.read")}</button>
             </div>
             <div className="mt-3">
-              <button className="btn-three me-2">Add to Wishlist</button>
+              <button className="btn-three me-2">{t("detailSection.wishlist")}</button>
             </div>
             <div className="mt-3">
-              <span className="icon">Share:</span>
+              <span className="icon">{t("detailSection.share")}:</span>
               <i className="btn-link-facebook">
                 <FaFacebookF />
               </i>

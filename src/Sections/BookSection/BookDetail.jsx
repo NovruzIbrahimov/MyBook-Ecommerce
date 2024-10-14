@@ -8,15 +8,17 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function BookDetail() {
+  const {t} = useTranslation();
   return (
     <div className="bookDetail mt-4 mb-4">
       <div className="container mt-4 mb-4">
         <Link to="/">
-          <p className="link-p">Ana səhifəyə dön</p>
+          <p className="link-p">{t("bookDetail.back")}</p>
         </Link>
-        <h4 className="bookDetail-text pb-3">Kitabların təsviri</h4>
+        <h4 className="bookDetail-text pb-3">{t("bookDetail.description")}</h4>
         <div className="row">
           <div className="col-lg-5 col-md-12 col-sm-12 d-flex flex-column align-items-stretch bookDetail-left-description">
             <div className="row">
@@ -65,19 +67,19 @@ function BookDetail() {
               industry and is a test to find in the printing industry.
             </p>
             <p className="text-muted-add">
-              <strong>Müəllif:</strong> Novruz Ibrahimov
+              <strong>{t("bookDetail.author")}:</strong> Novruz Ibrahimov
             </p>
             <div className="d-flex gap-2 mt-2">
-              <button className="btn-one me-2">Səbətə əlavə et</button>
-              <button className="btn-two">Nümunə oxuyun</button>
+              <button className="btn-one me-2">{t("bookDetail.add")}t</button>
+              <button className="btn-two">{t("bookDetail.read")}</button>
             </div>
             <div className="mt-3">
               <button className="btn-three me-2">
-                İstək siyahısına əlavə edin
+              {t("bookDetail.wishlist")}
               </button>
             </div>
             <div className="mt-3">
-              <span className="icon">Share:</span>
+              <span className="icon">{t("bookDetail.share")}:</span>
               <i className="btn-link-facebook">
                 <FaFacebookF />
               </i>

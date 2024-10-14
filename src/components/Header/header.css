@@ -2,7 +2,6 @@
   background-color: #fbfcff;
   border-bottom: 1px solid #ededf0;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-  z-index: 1002;
 }
 
 .header .container {
@@ -40,12 +39,42 @@
   font-size: 22px;
   margin-right: 20px;
   transition: 0.5s;
+  position: relative;
 }
 
 .icons .globe-icon {
   color: #1e90ff;
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.language-options {
+  position: absolute;
+  top: 35px;
+  right: 97px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  padding: 9px;
+  align-items: center;
+}
+
+.language-option {
+  margin: 0 5px;
+}
+
+.language-option img {
+  width: 24px;
+  height: 19px;
+  object-fit: cover;
+}
+
+.language-option:hover {
+  opacity: 0.8;
 }
 
 .icons .bell-icon {
@@ -179,6 +208,20 @@
     display: none;
   }
 
+  .language-options {
+    position: absolute;
+    top: 35px;
+    right: 82px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    padding: 9px;
+    align-items: center;
+  }
+
   .icons {
     gap: 10px;
   }
@@ -195,6 +238,26 @@
 }
 
 @media (max-width: 425px) {
+  .language-options {
+    position: absolute;
+    top: 35px;
+    right: 74px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    padding: 6px;
+    align-items: center;
+  }
+
+  .language-option img {
+    width: 24px;
+    height: 16px !important;
+    object-fit: cover;
+  }
+
   .icons {
     gap: 8px;
   }
@@ -210,5 +273,21 @@
   }
   .icons .shopping-icon {
     margin-bottom: 2px;
+  }
+}
+
+@media (max-width: 320px) {
+  .language-options {
+    position: absolute;
+    top: 35px;
+    right: 74px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    padding: 4px;
+    align-items: center;
   }
 }

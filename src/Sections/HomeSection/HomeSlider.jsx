@@ -2,8 +2,10 @@ import React from "react";
 import "../HomeSection/homeSlider.css";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useTranslation } from "react-i18next";
 
 function HomeSlider() {
+  const {t} = useTranslation();
   const images = [
     {
       url: "https://templates.iqonic.design/booksto-dist/html/assets/images/browse-books/01.jpg",
@@ -47,7 +49,7 @@ function HomeSlider() {
     <div className="homeSlider mb-4 mt-4">
       <div className="container carousel-container">
         <div className="carousel-title">
-          <h2>Featured books</h2>
+          <h2>{t("homeSection.featured")}</h2>
         </div>
         <Carousel indicators={false} interval={3000}>
           {images.map((image, index) => (

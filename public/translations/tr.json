@@ -1,9 +1,9 @@
 {
   "sidebar": {
+    "mainPage" : "ANA SAYFALAR",
     "home": "Ana sayfa",
     "category": "Kategori sayfası",
     "books": "Kitaplar",
-    "bookPdf": "Kitap Pdf'i",
     "edition": "Yayınlar",
     "azerbaijani": "Azerbaycan yayınları",
     "turkish": "Türkçe baskılar",
@@ -17,22 +17,18 @@
     "writers": "Yazarlar",
     "azerbaijaniWriters": "Azerbaycanlı yazarlar",
     "worldWriters": "Dünya yazarları",
-    "about": "Hakkımızda",
-    "contact": "Bize Ulaşın",
-    "membership": "Üye ol"
+    "become" : "Üye Ol"
   },
   "header": {
-    "categoryPage": "Kategori sayfası",
-    "homePage": "Ana sayfa",
     "placeholder": "Aramak..."
   },
   "footer": {
-    "privacy": "Gizlilik Politikası Kullanım Şartları",
-    "copyright": "Telif Hakkı 2024",
-    "reserve": "Her hakkı saklıdır."
+    "copyright": "Telif Hakkı © 2024 Çevrimiçi Kitap Mağazası",
+    "created": "Site tarafından oluşturuldu",
+    "name": "Nevruz İbrahimov"
   },
   "profileModal": {
-    "hello": "Merhaba",
+    "information": "Profil Bilgileri",
     "available": "Mevcut",
     "profile": "Profilim",
     "personal": "Kişisel profil bilgilerini görüntüleyin.",
@@ -59,11 +55,11 @@
     "wishlist": "İstek listesine ekle",
     "share": "Paylaş"
   },
-  "bookSlideOne": {
+  "bookCardsOne": {
     "similar": "Benzer kitaplar",
     "viewMore": "Daha fazlasını gör"
   },
-  "bookSlideTwo": {
+  "bookCardsTwo": {
     "trendy": "Trend olan kitaplar",
     "viewMore": "Daha fazlasını gör"
   },
@@ -79,16 +75,12 @@
     "placeholderSearch": "burada ara...",
     "searchButton": "Aramak"
   },
-  "categorySlideOne": {
+  "categoryCardOne": {
     "similar": "Benzer kitaplar",
     "viewMore": "Daha fazlasını gör"
   },
-  "categorySlideTwo": {
+  "categoryCardTwo": {
     "trendy": "Trend olan kitaplar",
-    "viewMore": "Daha fazlasını gör"
-  },
-  "categorySlideThree": {
-    "favorite": "Favori kitaplar",
     "viewMore": "Daha fazlasını gör"
   },
   "detailSection": {
@@ -98,7 +90,8 @@
     "add": "Sepete ekle",
     "read": "Örneği okuyun",
     "wishlist": "İstek listesine ekle",
-    "share": "Paylaş"
+    "share": "Paylaş",
+    "showNotification" : "Kitap eklendi!"
   },
   "cartSection": {
     "shoppingCart": "Alışveriş Sepeti",
@@ -114,5 +107,25 @@
     "address": "Adres",
     "addressInput": "Adresinizi girin",
     "confirmButton": "Siparişi Onayla"
+  },
+  "homeSection": {
+    "featured": "Öne çıkan kitaplar",
+    "welcome": "Bir Sonraki Maceranıza Hoş Geldiniz",
+    "welcomeButton": "Kitapları Keşfedin",
+    "choose": "Neden Bizi Seçmelisiniz?",
+    "bestseller": "En çok satanlar",
+    "discoverTop": "Okuyucuların elinizden bırakamayacağı çok satan kitapları keşfedin.",
+    "arrival": "Yeni Gelenler",
+    "stayAhead": "Tüm türlerdeki en yeni sürümlerle bir adım önde olun.",
+    "offers": "Özel Teklifler",
+    "enjoy": "Seçili kitaplarda özel fırsatların ve indirimlerin keyfini çıkarın.",
+    "subscribe": "Güncellemeler için abone olun",
+    "stayUp": "En son sürümler ve özel tekliflerle güncel kalın.",
+    "homePlaceholder": "E-postanızı girin",
+    "subscribeButton": "Abone",
+    "blockquote": "Kitapsız bir oda ruhsuz bir bedene benzer.",
+    "marcus": "Marcus Tullius Cicero",
+    "ready": "Dalmaya Hazır mısınız?",
+    "start": "Okuma Yolculuğunuza Başlayın"
   }
 }

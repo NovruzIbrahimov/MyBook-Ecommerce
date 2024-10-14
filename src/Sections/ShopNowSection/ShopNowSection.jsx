@@ -2,8 +2,10 @@ import React, { useContext, useState } from "react";
 import "../ShopNowSection/shopNowSection.css";
 import { CartContext } from "../../context/CartContext";
 import { useSecondaryNotification } from "../../context/SecondaryNotificationContext";
+import { useTranslation } from "react-i18next";
 
 function ShopNowSection() {
+  const { t } = useTranslation();
   const { cartItems } = useContext(CartContext);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -39,7 +41,7 @@ function ShopNowSection() {
   return (
     <div className="shopNowSection">
       <div className="container mt-5">
-        <h1 className="text-center mb-4">Confirm Your Order</h1>
+        <h1 className="text-center mb-4">{t("shopNowSection.confirmText")}</h1>
 
         <div className="row justify-content-center">
           {cartItems.map((item) => (
@@ -70,7 +72,7 @@ function ShopNowSection() {
             <form onSubmit={handleOrderConfirm}>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
-                  Name
+                  {t("shopNowSection.name")}
                 </label>
                 <input
                   type="text"
@@ -78,14 +80,14 @@ function ShopNowSection() {
                   id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Enter your name"
+                  placeholder={t("shopNowSection.nameInput")}
                   required
                 />
               </div>
 
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
-                  Email
+                  {t("shopNowSection.mail")}
                 </label>
                 <input
                   type="email"
@@ -93,14 +95,14 @@ function ShopNowSection() {
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
+                  placeholder={t("shopNowSection.mailInput")}
                   required
                 />
               </div>
 
               <div className="mb-3">
                 <label htmlFor="address" className="form-label">
-                  Address
+                  {t("shopNowSection.address")}
                 </label>
                 <input
                   type="text"
@@ -108,13 +110,13 @@ function ShopNowSection() {
                   id="address"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
-                  placeholder="Enter your address"
+                  placeholder={t("shopNowSection.addressInput")}
                   required
                 />
               </div>
 
               <button type="submit" className="btn btn-confirm w-100">
-                Confirm Order
+                {t("shopNowSection.confirmButton")}
               </button>
             </form>
           </div>

@@ -1,9 +1,9 @@
 {
   "sidebar": {
+    "mainPage" : "ƏSAS SƏHİFƏLƏR",
     "home": "Ana səhifə",
     "category": "Kateqoriya səhifəsi",
     "books": "Kitablar",
-    "bookPdf": "Kitab Pdf",
     "edition": "Nəşrlər",
     "azerbaijani": "Azərbaycan nəşrləri",
     "turkish": "Türkiyə nəşrləri",
@@ -17,22 +17,18 @@
     "writers": "Yazıçılar",
     "azerbaijaniWriters": "Azərbaycan yazıçıları",
     "worldWriters": "Dünya yazıçıları",
-    "about": "Haqqımızda",
-    "contact": "Bizimlə əlaqə",
-    "membership": "Üzv olmaq"
+    "become" : "Üzvlük ol"
   },
   "header": {
-    "categoryPage": "Kateqoriya səhifəsi",
-    "homePage": "Ana səhifə",
     "placeholder": "Axtar..."
   },
   "footer": {
-    "privacy": "Məxfilik Siyasəti İstifadə Şərtləri",
-    "copyright": "Müəllif hüququ 2024",
-    "reserve": "Bütün Hüquqlar Qorunur."
+    "copyright": "Copyright © 2024 Onlayn Kitab Dükanı",
+    "created": "Sayt tərəfindən yaradılmışdır",
+    "name": "Novruz İbrahimov"
   },
   "profileModal": {
-    "hello": "Salam",
+    "information": "Profil Məlumatı",
     "available": "Mövcüddur",
     "profile": "Profilim",
     "personal": "Şəxsi profil məlumatlarına baxın.",
@@ -59,11 +55,11 @@
     "wishlist": "İstək siyahısına əlavə edin",
     "share": "Paylaş"
   },
-  "bookSlideOne": {
+  "bookCardsOne": {
     "similar": "Oxşar kitablar",
     "viewMore": "Daha çox baxın"
   },
-  "bookSlideTwo": {
+  "bookCardsTwo": {
     "trendy": "Trend kitablar",
     "viewMore": "Daha çox baxın"
   },
@@ -79,16 +75,12 @@
     "placeholderSearch": "burada axtar...",
     "searchButton": "Axtar"
   },
-  "categorySlideOne": {
+  "categoryCardOne": {
     "similar": "Oxşar kitablar",
     "viewMore": "Daha çox baxın"
   },
-  "categorySlideTwo": {
+  "categoryCardTwo": {
     "trendy": "Trend kitablar",
-    "viewMore": "Daha çox baxın"
-  },
-  "categorySlideThree": {
-    "favorite": "Sevimli kitablar",
     "viewMore": "Daha çox baxın"
   },
   "detailSection": {
@@ -98,7 +90,8 @@
     "add": "Səbətə əlavə et",
     "read": "Nümunə oxuyun",
     "wishlist": "İstək siyahısına əlavə edin",
-    "share": "Paylaş"
+    "share": "Paylaş",
+    "showNotification" : "Kitab əlavə edildi!"
   },
   "cartSection": {
     "shoppingCart": "Alış-veriş səbəti",
@@ -114,5 +107,25 @@
     "address": "Ünvan",
     "addressInput": "Ünvanı daxil edin",
     "confirmButton": "Sifarişi təsdiqlə"
+  },
+  "homeSection": {
+    "featured": "Seçilmiş kitablar",
+    "welcome": "Növbəti macəranıza xoş gəlmisiniz",
+    "welcomeButton": "Kitabları araşdırın",
+    "choose": "Niyə Bizi Seçməlisiniz?",
+    "bestseller": "Bestsellerlər",
+    "discoverTop": "Oxucuların yerə qoya bilmədiyi ən çox satılan kitabları kəşf edin.",
+    "arrival": "Yeni Gələnlər",
+    "stayAhead": "Bütün janrlar üzrə ən son buraxılışlarla irəlidə qalın.",
+    "offers": "Eksklüziv Təkliflər",
+    "enjoy": "Seçilmiş kitablara eksklüziv sövdələşmələrdən və endirimlərdən həzz alın.",
+    "subscribe": "Yeniləmələr üçün abunə olun",
+    "stayUp": "Ən son buraxılışlar və eksklüziv təkliflərdən xəbərdar olun.",
+    "homePlaceholder": "E-poçtunuzu daxil edin",
+    "subscribeButton": "Abunə",
+    "blockquote": "Kitabsız otaq ruhsuz bədən kimidir.",
+    "marcus": "Marcus Tullius Cicero",
+    "ready": "Dalmağa hazırsınız?",
+    "start": "Oxu səyahətinizə başlayın"
   }
 }

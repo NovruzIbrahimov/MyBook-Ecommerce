@@ -1,9 +1,9 @@
 {
   "sidebar": {
-    "home": "Home",
+    "mainPage" : "MAIN PAGES",
+    "home": "Home Page",
     "category": "Category",
     "books": "Books",
-    "bookPdf": "Book Pdf",
     "edition": "Editions",
     "azerbaijani": "Azerbaijani Editions",
     "turkish": "Turkish Editions",
@@ -17,22 +17,18 @@
     "writers": "Writers",
     "azerbaijaniWriters": "Azerbaijani writers",
     "worldWriters": "World writers",
-    "about": "About",
-    "contact": "Contact",
-    "membership": "Become Membership"
+    "become" : "Become Membership"
   },
   "header": {
-    "categoryPage": "Category page",
-    "homePage": "Home",
     "placeholder": "Search..."
   },
   "footer": {
-    "privacy": "Privacy Policy Terms of Use",
-    "copyright": "Copyright 2024",
-    "reserve": " All Rights Reserved."
+    "copyright": "Copyright © 2024 Online Book Store",
+    "created": "The site was created by",
+    "name": "Novruz Ibrahimov"
   },
   "profileModal": {
-    "hello": "Hello",
+    "information": "Profile Information",
     "available": "Available",
     "profile": "My Profile",
     "personal": "View personal profile details",
@@ -59,11 +55,11 @@
     "wishlist": "Add to Wishlist",
     "share": "Share"
   },
-  "bookSlideOne": {
+  "bookCardsOne": {
     "similar": "Similar Books",
     "viewMore": "View More"
   },
-  "bookSlideTwo": {
+  "bookCardsTwo": {
     "trendy": "Trendy Books",
     "viewMore": "View More"
   },
@@ -79,16 +75,12 @@
     "placeholderSearch": "Search here...",
     "searchButton": "Search"
   },
-  "categorySlideOne": {
+  "categoryCardOne": {
     "similar": "Similar Books",
     "viewMore": "View More"
   },
-  "categorySlideTwo": {
+  "categoryCardTwo": {
     "trendy": "Trendy Books",
-    "viewMore": "View More"
-  },
-  "categorySlideThree": {
-    "favorite": "Favorite Books",
     "viewMore": "View More"
   },
   "detailSection": {
@@ -98,7 +90,8 @@
     "add": "Add To Cart",
     "read": "Read Sample",
     "wishlist": "Add to Wishlist",
-    "share": "Share"
+    "share": "Share",
+    "showNotification" : "Book added!"
   },
   "cartSection": {
     "shoppingCart": "Shopping Cart",
@@ -114,5 +107,27 @@
     "address": "Address",
     "addressInput": "Enter your address",
     "confirmButton": "Confirm Order"
+  },
+  "homeSection": {
+    "featured": "Featured books",
+    "welcome": "Welcome to Your Next Adventure",
+    "welcomeSubtitle": "Discover new worlds, exciting stories, and timeless classics.",
+    "welcomeButton": "Explore Books",
+    "choose": "Why Choose Us?",
+    "bestseller": "Bestsellers",
+    "discoverTop": "Discover top-selling books that readers can't put down.",
+    "arrival": "New Arrivals",
+    "stayAhead": "Stay ahead with the latest releases across all genres.",
+    "offers": "Exclusive Offers",
+    "enjoy": "Enjoy exclusive deals and discounts on selected books.",
+    "subscribe": "Subscribe for Updates",
+    "stayUp": "Stay updated with the latest releases and exclusive offers.",
+    "homePlaceholder": "Enter your email",
+    "subscribeButton": "Subscribe",
+    "blockquote": "A room without books is like a body without a soul.",
+    "marcus": "Marcus Tullius Cicero",
+    "ready": "Ready to Dive In?",
+    "start": "Start Your Reading Journey"
   }
+  
 }

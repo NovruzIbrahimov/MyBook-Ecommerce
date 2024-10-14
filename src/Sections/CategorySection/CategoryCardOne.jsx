@@ -3,8 +3,10 @@ import "../CategorySection/categoryCardOne.css";
 import FlipCard from "../../components/FlipCard/FlipCard";
 import { cardsData } from "../../mocks/mockData";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function CategoryCardOne() {
+  const {t} = useTranslation();
   const navigate = useNavigate();
 
   const handleViewMore = () => {
@@ -17,10 +19,10 @@ function CategoryCardOne() {
       <div className="container">
         <div className="container-slide d-flex justify-content-between align-items-center mb-4">
           <div className="left-text">
-            <h4>Similar Books</h4>
+            <h4>{t("categoryCardOne.similar")}</h4>
           </div>
           <div className="right-text">
-            <button className="btn" onClick={handleViewMore}>View More</button>
+            <button className="btn" onClick={handleViewMore}>{t("categoryCardOne.viewMore")}</button>
           </div>
         </div>
         <div className="row">

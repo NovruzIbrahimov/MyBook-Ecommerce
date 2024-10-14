@@ -4,8 +4,10 @@ import { Modal } from "react-bootstrap";
 import { MdDeleteForever } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
+import { useTranslation } from "react-i18next";
 
 function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
+  const { t } = useTranslation();
   const { cartItems, removeFromCart } = useContext(CartContext);
 
   const navigate = useNavigate();
@@ -36,11 +38,11 @@ function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
   return (
     <Modal show={show} onHide={onClose}>
       <Modal.Header closeButton>
-        <Modal.Title>All Carts</Modal.Title>
+        <Modal.Title>{t("cartModal.carts")}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         {cartItems.length === 0 ? (
-          <p>Your cart is empty</p>
+          <p>{t("cartModal.cart")}</p>
         ) : (
           cartItems.map((item, index) => (
             <div
@@ -66,10 +68,10 @@ function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-start">
         <button className="btn-view mr-2" onClick={handleViewCart}>
-          View Cart
+        {t("cartModal.view")}
         </button>
         <button className="btn-shop" onClick={handleShopNow}>
-          Shop now
+        {t("cartModal.shop")}
         </button>
       </Modal.Footer>
     </Modal>
