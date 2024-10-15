@@ -74,7 +74,7 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
   ];
 
   const handleItemClick = (itemId) => {
-    if (!isOpen) return;
+    if (!isOpen || isSmallScreen) return;
     setOpenItem(openItem === itemId ? null : itemId);
   };
 

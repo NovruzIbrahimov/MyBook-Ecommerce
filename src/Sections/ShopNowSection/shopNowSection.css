@@ -60,6 +60,7 @@ input.form-control:focus {
 input.form-control {
   font-size: 0.9rem;
   padding: 10px;
+  color: #777d74;
 }
 
 .shop-alert {
@@ -90,4 +91,21 @@ button.btn-confirm {
 
 button.btn-confirm:hover {
   background-color: #0dd6b8;
+}
+
+@media (max-width: 425px) {
+  .shopNowSection h1.text-center {
+    font-size: 21px;
+  }
+  .shopNowSection div.mb-3 {
+    font-size: 12px;
+  }
+
+  .shopNowSection div.mb-3 input.form-control {
+    font-size: 10px;
+    padding: 7px;
+  }
+  .shopNowSection button.btn.btn-confirm.w-100 {
+    padding: 4px 12px;
+  }
 }

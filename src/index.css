@@ -7,6 +7,34 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 393px) {
+  body {
+    overflow: hidden;
+  }
+}
+
 /* 
 color: #0DD6B8; yasil
 color: #11141B; qara

@@ -27,12 +27,9 @@
 }
 
 @media (max-width: 1024px) {
-  .main-section {
-    margin-left: 0;
-  }
-
   .app.small-screen .main-section {
     margin-left: 0;
+    height: 100vh;
   }
 
   .app.small-screen .content,
@@ -41,3 +38,92 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .app.small-screen .main-section {
+    margin-left: 0;
+    height: 100vh;
+  }
+
+  .app.small-screen .content,
+  .app.small-screen .header,
+  .app.small-screen .footer {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .app.small-screen .main-section {
+    margin-left: 0;
+    height: 103vh;
+  }
+
+  .app.small-screen .content,
+  .app.small-screen .header,
+  .app.small-screen .footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 393px) {
+  .app.small-screen .main-section {
+    margin-left: 0;
+    height: 109vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .app.small-screen .main-section {
+    margin-left: 0;
+    height: 115vh;
+  }
+
+  .app.small-screen .content,
+  .app.small-screen .header,
+  .app.small-screen .footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .app.small-screen .main-section {
+    margin-left: 0;
+    height: 133vh;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  header.header,
+  div.content,
+  footer.footer {
+    width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  header.header,
+  div.content,
+  footer.footer {
+    width: 768px;
+  }
+}
+
+@media (max-width: 425px) {
+  header.header,
+  div.content,
+  footer.footer {
+    width: 425px;
+  }
+
+  div.home,
+  div.category,
+  div.book {
+    width: 385px;
+  }
+}
+
+
+
+

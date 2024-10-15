@@ -70,7 +70,7 @@ function BookDetail() {
               <strong>{t("bookDetail.author")}:</strong> Novruz Ibrahimov
             </p>
             <div className="d-flex gap-2 mt-2">
-              <button className="btn-one me-2">{t("bookDetail.add")}t</button>
+              <button className="btn-one me-2">{t("bookDetail.add")}</button>
               <button className="btn-two">{t("bookDetail.read")}</button>
             </div>
             <div className="mt-3">

@@ -119,4 +119,8 @@
     font-size: 12px;
     padding: 4px 10px;
   }
+
+  div.fade.modal-backdrop.show {
+    opacity: 0;
+   }
 }
