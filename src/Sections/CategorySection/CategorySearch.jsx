@@ -13,7 +13,7 @@ function CategorySearch() {
               <h2 className="mb-0">{t("categorySearch.searchBook")}</h2>
             </div>
 
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center category-search-bottom">
               <select className="form-select me-2">
                 <option value="1">{t("categorySearch.all")}</option>
                 <option value="2">{t("categorySearch.optionTwo")}</option>

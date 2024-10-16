@@ -85,12 +85,13 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
       }`}
     >
       <div className="sidebar-content">
-        <Link to="/">
+        <Link to="/" className="sidebar-logo-container">
           <img
-            src="src/assets/eazyaz.png"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYp-dKLlqPV0pcKyX0qo92rCSvXcNLoRMt2A&s"   
             alt="Logo"
             className="sidebar-logo"
           />
+          <span className="logo-text">Eazy.az</span>
         </Link>
 
         <button className="burger-btn" onClick={toggleSidebar}>

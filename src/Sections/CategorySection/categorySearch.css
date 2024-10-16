@@ -57,7 +57,6 @@ button.search-button {
   }
 }
 
-/* Styles for 768px (tablet size) */
 @media (max-width: 768px) {
   .categorySearch {
     padding: 10px;
@@ -85,7 +84,6 @@ button.search-button {
   }
 }
 
-/* Styles for mobile (max-width: 425px) */
 @media (max-width: 425px) {
   .categorySearch {
     padding: 8px;
@@ -109,6 +107,22 @@ button.search-button {
 
   button.search-button {
     width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .categorySearch {
+    padding: 8px;
+  }
+
+  select.form-select {
+    margin: -12px 0px 0px -2px;
+  }
+
+  button.search-button.ms-2 {
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
     margin-bottom: 10px;
   }
 }

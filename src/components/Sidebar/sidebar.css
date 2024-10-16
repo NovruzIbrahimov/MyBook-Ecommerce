@@ -18,6 +18,20 @@
   padding: 0 11px 0 20px;
 }
 
+.sidebar-logo-container {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-logo-container .logo-text {
+  text-decoration: none;
+}
+
+span.logo-text {
+  color: #0dd6b8;
+}
+
 .sidebar.closed {
   width: 75px;
 }
@@ -28,10 +42,14 @@
 }
 
 .sidebar.closed .sidebar-content .sidebar-logo {
-  width: 68px;
+  width: 50px;
   display: block;
-  margin: 80px 0 0 -16px;
+  margin: 80px 0 0 -8px;
   align-self: center;
+}
+
+.sidebar.closed .sidebar-content .sidebar-logo-container .logo-text {
+  display: none;
 }
 
 .sidebar.closed .menu-items h3 {
@@ -78,7 +96,7 @@
 }
 
 img.sidebar-logo {
-  width: 100px;
+  width: 50px;
   margin: 10px;
 }
 
@@ -256,6 +274,10 @@ div.nav-link {
     display: none;
   }
 
+  .small-screen .logo-text {
+    display: none;
+  }
+
   .small-screen .menu-items .collapse {
     display: none;
   }
@@ -275,7 +297,11 @@ div.nav-link {
     z-index: 1001;
   }
 
-  .small-screen .sidebar-logo{
+  .small-screen .sidebar-logo {
+    display: none;
+  }
+
+  .small-screen .logo-text {
     display: none;
   }
 
@@ -283,7 +309,7 @@ div.nav-link {
     display: none;
   }
 
-  .small-screen .menu-items .bottom-part{
+  .small-screen .menu-items .bottom-part {
     display: none;
   }
 
@@ -306,12 +332,21 @@ div.nav-link {
     transform: translateX(0);
     height: 100vh;
     width: 260px;
-    top: 62px;
     z-index: 1001;
   }
 
-  .small-screen .sidebar-logo{
-    display: none;
+  .small-screen .sidebar-logo-container {
+    margin-top: 25px;
+  }
+
+  .small-screen .sidebar-logo {
+    width: 30px;
+    display: block;
+  }
+
+  .small-screen .logo-text {
+    font-size: 14px;
+    display: block;
   }
 
   .small-screen .burger-btn {
@@ -326,19 +361,34 @@ div.nav-link {
     padding: 0 11px 0 20px;
   }
   .small-screen .sidebar-content .menu-items {
-    margin-top: 70px;
+    margin-top: 15px;
   }
   .small-screen .sidebar-content .menu-items h3 {
     font-size: 14px;
   }
-  .small-screen .sidebar-content .menu-items div.flex-column.mb-4.nav div.nav-item .vertical-icon  {
+  .small-screen
+    .sidebar-content
+    .menu-items
+    div.flex-column.mb-4.nav
+    div.nav-item
+    .vertical-icon {
     font-size: 15px;
   }
-  .small-screen .sidebar-content .menu-items div.flex-column.mb-4.nav div.nav-item .arrow  {
+  .small-screen
+    .sidebar-content
+    .menu-items
+    div.flex-column.mb-4.nav
+    div.nav-item
+    .arrow {
     font-size: 13px;
   }
-  .small-screen .sidebar-content .menu-items div.flex-column.mb-4.nav div.nav-item .text{
-     font-size: 15px;
+  .small-screen
+    .sidebar-content
+    .menu-items
+    div.flex-column.mb-4.nav
+    div.nav-item
+    .text {
+    font-size: 15px;
   }
 }
 
@@ -356,17 +406,74 @@ div.nav-link {
     z-index: 1001;
   }
 
+  .small-screen .sidebar-logo-container {
+    margin-top: 22px;
+  }
+
+  .small-screen .sidebar-logo {
+    width: 30px;
+    display: block;
+  }
+
+  .small-screen .logo-text {
+    font-size: 14px;
+    display: block;
+  }
+
   .small-screen .sidebar-content .menu-items {
-    margin-top: 95px;
+    margin-top: 10px;
   }
 
   .small-screen .burger-btn {
     display: none;
   }
+
+  .small-screen .menu-items .bottom-part {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .small-screen .sidebar-logo-container {
+    margin-top: 22px;
+  }
+
+  .small-screen .sidebar-logo {
+    width: 30px;
+    display: block;
+  }
+
+  .small-screen .logo-text {
+    font-size: 14px;
+    display: block;
+  }
+  .small-screen .sidebar-content .menu-items {
+    margin-top: 15px;
+  }
+  .small-screen .burger-btn {
+    display: none;
+  }
+
+  .small-screen .menu-items .bottom-part {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
+  .small-screen .sidebar-logo-container {
+    margin-top: 20px;
+  }
   .sidebar.open.small-screen {
     height: 109vh;
+  }
+  .small-screen .burger-btn {
+    display: none;
+  }
+
+  .small-screen .menu-items .bottom-part {
+    display: none;
+  }
+  .small-screen .sidebar-content .menu-items {
+    margin-top: 10px;
   }
 }
