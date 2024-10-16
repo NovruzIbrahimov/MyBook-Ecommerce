@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Sidebar/sidebar.css";
 import { Link } from "react-router-dom";
 import {
@@ -76,13 +76,22 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
   const handleItemClick = (itemId) => {
     if (!isOpen || isSmallScreen) return;
     setOpenItem(openItem === itemId ? null : itemId);
+
+    if (isSmallScreen) {
+      toggleSidebar();
+    }
+  };
+
+
+  const handleSidebarClick = (e) => {
+    e.stopPropagation();
   };
 
   return (
     <div
       className={`sidebar ${isOpen ? "open" : "closed"} ${
         isSmallScreen ? "small-screen" : ""
-      }`}
+      }`} onClick={handleSidebarClick}
     >
       <div className="sidebar-content">
         <Link to="/" className="sidebar-logo-container">

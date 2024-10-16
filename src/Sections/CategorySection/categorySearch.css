@@ -111,6 +111,22 @@ button.search-button {
   }
 }
 
+@media (max-width: 393px) {
+  .categorySearch {
+    padding: 8px;
+  }
+
+  select.form-select {
+    display: none;
+  }
+
+  button.search-button.ms-2 {
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 375px) {
   .categorySearch {
     padding: 8px;
@@ -123,6 +139,22 @@ button.search-button {
   button.search-button.ms-2 {
     font-size: 12px;
     padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .categorySearch {
+    padding: 8px;
+  }
+
+  select.form-select {
+    display: none;
+  }
+
+  button.search-button.ms-2 {
+    font-size: 11px;
+    padding: 4px 4px 4px 4px;
     margin-bottom: 10px;
   }
 }

@@ -60,7 +60,7 @@ function ShopNowSection() {
                     {trimTitle(item.title1, 15)}
                   </h5>
                   <p className="shop-card-text">{item.title2}</p>
-                  <p className="shop-card-text-price">Price: ${item.price}</p>
+                  <p className="shop-card-text-price">Price: {item.price} Azn</p>
                 </div>
               </div>
             </div>

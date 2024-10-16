@@ -19,6 +19,10 @@ function App() {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const closeSidebar = () => {
+    setIsSidebarOpen(false); 
+  };
+
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 1024);
@@ -33,6 +37,12 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleOutsideClick = () => {
+    if (isSmallScreen && isSidebarOpen) {
+      closeSidebar();
+    }
+  };
+
   return (
     <Router>
       <div
@@ -42,10 +52,11 @@ function App() {
       >
         <Sidebar
           isOpen={isSidebarOpen}
+          closeSidebar={closeSidebar}
           toggleSidebar={toggleSidebar}
           isSmallScreen={isSmallScreen}
         />
-        <div className="main-section">
+        <div className="main-section" onClick={handleOutsideClick}>
           <Header toggleSidebar={toggleSidebar} isSmallScreen={isSmallScreen} />
           <div className="content">
             <Routes>

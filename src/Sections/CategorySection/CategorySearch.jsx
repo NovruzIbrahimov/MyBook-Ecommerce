@@ -14,25 +14,25 @@ function CategorySearch() {
             </div>
 
             <div className="d-flex justify-content-center align-items-center category-search-bottom">
-              <select className="form-select me-2">
+              <select className="form-select me-2 select1">
                 <option value="1">{t("categorySearch.all")}</option>
                 <option value="2">{t("categorySearch.optionTwo")}</option>
                 <option value="3">{t("categorySearch.optionThree")}</option>
                 <option value="4">{t("categorySearch.optionFour")}</option>
               </select>
-              <select className="form-select me-2">
+              <select className="form-select me-2 select2">
                 <option value="1">{t("categorySearch.genres")}</option>
                 <option value="2">{t("categorySearch.optionTwo")}</option>
                 <option value="3">{t("categorySearch.optionThree")}</option>
                 <option value="4">{t("categorySearch.optionFour")}</option>
               </select>
-              <select className="form-select me-2">
+              <select className="form-select me-2 select3">
                 <option value="1">{t("categorySearch.year")}</option>
                 <option value="2">{t("categorySearch.optionTwo")}</option>
                 <option value="3">{t("categorySearch.optionThree")}</option>
                 <option value="4">{t("categorySearch.optionFour")}</option>
               </select>
-              <select className="form-select me-3">
+              <select className="form-select me-3 select4">
                 <option value="1">{t("categorySearch.author")}</option>
                 <option value="2">{t("categorySearch.optionTwo")}</option>
                 <option value="3">{t("categorySearch.optionThree")}</option>
