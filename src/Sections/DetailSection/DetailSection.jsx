@@ -30,7 +30,7 @@ function DetailSection() {
   return (
     <div className="detailSection mt-4 mb-4">
       <div className="container mt-4 mb-4">
-        <Link to="/category">
+        <Link to="/">
           <p className="link-p">{t("detailSection.back")}</p>
         </Link>
         <h4 className="detail-text pb-3">{t("detailSection.description")}</h4>
