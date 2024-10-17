@@ -56,7 +56,7 @@
 @media (max-width: 425px) {
   .app.small-screen .main-section {
     margin-left: 0;
-    height: 103vh;
+    height: 100vh;
     width: 74%;
   }
 
@@ -70,7 +70,7 @@
 @media (max-width: 393px) {
   .app.small-screen .main-section {
     margin-left: 0;
-    height: 852px;
+    height: 662px;
   }
 }
 
