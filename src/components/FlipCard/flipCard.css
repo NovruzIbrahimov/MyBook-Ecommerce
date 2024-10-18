@@ -66,7 +66,7 @@
 .card-description {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #0dd6b8;
+  color: #3aafa9;
   margin-bottom: 15px;
   white-space: nowrap;
   overflow: hidden;
@@ -96,7 +96,7 @@
 }
 
 .card-icons-shopping {
-  color: #0dd6b8;
+  color: #3aafa9;
 }
 
 .card-icons-heart {
@@ -104,9 +104,9 @@
 }
 
 button.btn.add-to-cart {
-  background-color: #0dd6b8;
+  background-color: #3aafa9;
   color: white;
-  border: 1px solid #0dd6b8;
+  border: 1px solid #3aafa9;
   font-size: 1rem;
   transition: transform 0.4s ease-in-out, opacity 0.4s;
   opacity: 0;

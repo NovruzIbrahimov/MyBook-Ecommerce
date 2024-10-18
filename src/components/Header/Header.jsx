@@ -94,8 +94,7 @@ function Header({ toggleSidebar, isSmallScreen }) {
                 className="profile-img rounded-circle"
               />
               <div className="profile-info">
-                <span className="name">Sabina</span>
-                <span className="price">150.00 Azn</span>
+                <span className="name">Welcome</span>
               </div>
             </div>
           </div>

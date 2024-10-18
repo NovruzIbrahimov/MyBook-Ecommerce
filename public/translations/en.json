@@ -96,7 +96,10 @@
   "cartSection": {
     "shoppingCart": "Shopping Cart",
     "emptyCart": "Your cart is empty",
-    "total": "Total"
+    "total": "Total",
+    "totalItems" : "Product count",
+    "totalPrice" : "Total amount",
+    "confirmOrder" : "Complete the order"
   },
   "shopNowSection": {
     "confirmText": "Confirm Your Order",

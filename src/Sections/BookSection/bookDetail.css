@@ -14,7 +14,7 @@
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  color: #0dd6b8;
+  color: #3aafa9;
 }
 
 h4.bookDetail-text {
@@ -70,21 +70,21 @@ p.text-muted-add {
 }
 
 p.text-muted-add strong {
-  color: #0dd6b8;
+  color: #3aafa9;
 }
 
 button.btn-one {
   color: #ffffff;
-  background-color: #0dd6b8;
-  border: 1px solid #0dd6b8;
+  background-color: #3aafa9;
+  border: 1px solid #3aafa9;
   border-radius: 5px;
   padding: 6px 12px;
 }
 
 button.btn-two {
   color: #ffffff;
-  background-color: #0dd6b8;
-  border: 1px solid #0dd6b8;
+  background-color: #3aafa9;
+  border: 1px solid #3aafa9;
   border-radius: 5px;
   padding: 6px 12px;
 }
@@ -263,5 +263,46 @@ span.icon {
     height: 35px;
     font-size: 14px;
     padding: 6px 8px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bookDetail-left-description-left {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .bookDetail-left-description-right img.main-img {
+    max-width: 200px;
+  }
+
+  .bookDetail-right-description h3 {
+    font-size: 20px;
+  }
+
+  .bookDetail-right-description p {
+    font-size: 14px;
+  }
+
+  p.text-muted strong {
+    font-size: 16px;
+  }
+
+  button.btn-one,
+  button.btn-two,
+  button.btn-three {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .btn-link-facebook.ms-2,
+  .btn-link-twitter.ms-2,
+  .btn-link-youtube.ms-2,
+  .btn-link-pinterest.ms-2 {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    padding: 6px 8px;
+    margin-left: 0 !important;
   }
 }

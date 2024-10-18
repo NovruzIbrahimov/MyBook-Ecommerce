@@ -43,7 +43,7 @@ p.text-center {
   white-space: nowrap;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #0dd6b8;
+  color: #3aafa9;
 }
 
 .product-quantity {
@@ -59,20 +59,20 @@ p.text-center {
 }
 
 .product-quantity .btn.btn-outline-first {
-  background-color: #0dd6b8;
+  background-color: #3aafa9;
   color: #11141b;
   border: none;
 }
 
 .product-quantity .btn.btn-outline-secondary {
-  background-color: #0dd6b8;
+  background-color: #3aafa9;
   color: #11141b;
   border: none;
 }
 
 .product-quantity .btn.btn-light:hover{
-  background-color: #0dd6b8;
-  border-color: #0dd6b8;
+  background-color: #3aafa9;
+  border-color: #3aafa9;
 }
 
 .product-remove .btn-remove {
@@ -87,10 +87,58 @@ p.text-center {
   color: #e98c7c;
 }
 
-.total-price-section {
-  color: #0dd6b8;
-  font-weight: 700;
-  font-size: 1.5rem;
+.cartSection-bottom-section {
+  margin-top: 20px;
+}
+
+.cartSection-bottom-row {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.cartSection-bottom-section .cartSection-product-count,
+.cartSection-bottom-section .cartSection-total-price,
+.cartSection-bottom-section .cartSection-button{
+  margin-bottom: 10px;
+}
+
+.cartSection-product-count p{
+  font-size: 18px;
+  font-weight: bolder;
+  color: #11141b;
+  margin-top: 10px;
+}
+
+.cartSection-total-price h4{
+  font-size: 21px;
+  font-weight: bolder;
+  color: #3aafa9;
+}
+
+.cartSection-button button.btn{
+  color: #fff;
+  background-color: #3aafa9;
+  border-color: #3aafa9;
+}
+
+.cartSection-button button.btn:hover {
+  color: #fff;
+  background-color: #3aafa9;
+  border-color: #3aafa9;
+}
+
+.cartSection-button button.btn:active,
+.cartSection-button button.btn:focus,
+.cartSection-button button.btn:focus-visible {
+  background-color: #3aafa9;
+  border-color: #3aafa9;
+  box-shadow: none;
+}
+
+.cartSection-button button.btn:focus {
+  outline: none;
 }
 
 
@@ -139,10 +187,23 @@ p.text-center {
     padding: 4px 6px;
     font-size: 0.8rem;
   }
-
-  .total-price-section h4{
-    font-size: 1rem;
-    font-weight: bold;
+  
+  .cartSection-product-count p{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #11141b;
+    margin-top: 10px;
+  }
+  
+  .cartSection-total-price h4{
+    font-size: 17px;
+    font-weight: bolder;
+    color: #3aafa9;
+  }
+  
+  .cartSection-button button.btn{
+    color: #fff;
+    background-color: #3aafa9;
   }
 }
 
@@ -194,13 +255,28 @@ p.text-center {
     font-size: 0.65rem;
   }
 
-  .total-price-section h4{
-    font-size: 0.8rem;
-    font-weight: bold; 
-  }
   .product-remove .btn-remove {
     font-size: 1.3rem;
     margin-bottom: 19px;
+  }
+
+  .cartSection-product-count p{
+    font-size: 13px;
+    font-weight: bolder;
+    color: #11141b;
+    margin-top: 10px;
+  }
+  
+  .cartSection-total-price h4{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #3aafa9;
+  }
+  
+  .cartSection-button button.btn{
+    font-size: 12px;
+    color: #fff;
+    background-color: #3aafa9;
   }
 }
 

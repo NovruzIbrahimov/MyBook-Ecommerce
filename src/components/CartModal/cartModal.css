@@ -1,5 +1,5 @@
 div.modal-header {
-  background-color: #0dd6b8;
+  background-color: #3aafa9;
   color: #ffffff;
 }
 
@@ -49,8 +49,8 @@ div.modal-body {
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #0dd6b8;
-  border: 1px solid #0dd6b8;
+  background-color: #3aafa9;
+  border: 1px solid #3aafa9;
   border-radius: 5px;
   padding: 6px 16px;
   transition: 0.3s;
@@ -66,8 +66,8 @@ div.modal-body {
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #0dd6b8;
-  border: 1px solid #0dd6b8;
+  background-color: #3aafa9;
+  border: 1px solid #3aafa9;
   border-radius: 5px;
   padding: 6px 16px;
   transition: 0.3s;

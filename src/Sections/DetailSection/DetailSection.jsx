@@ -27,6 +27,7 @@ function DetailSection() {
     addToCart(book);
     showNotification("Kitab səbətə əlavə edildi!", 1000);
   };
+  
   return (
     <div className="detailSection mt-4 mb-4">
       <div className="container mt-4 mb-4">

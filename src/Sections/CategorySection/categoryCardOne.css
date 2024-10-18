@@ -15,7 +15,7 @@
 .categoryCardOne .right-text button.btn {
   border: none;
   color: #ffffff;
-  background-color: #0dd6b8;
+  background-color: #3aafa9;
 }
 
 @media (max-width: 425px) {
@@ -28,7 +28,7 @@
   .categoryCardOne .right-text button.btn {
     border: none;
     color: #ffffff;
-    background-color: #0dd6b8;
+    background-color: #3aafa9;
     padding: 5px 8px;
     font-size: 13px;
   }

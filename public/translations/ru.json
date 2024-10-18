@@ -96,7 +96,10 @@
   "cartSection": {
     "shoppingCart": "Корзина",
     "emptyCart": "Ваша корзина пуста",
-    "total": "Общий"
+    "total": "Общий",
+    "totalItems" : "Номер продукта",
+    "totalPrice" : "Общая сумма",
+    "confirmOrder" : "Завершить заказ"
   },
   "shopNowSection": {
     "confirmText": "Подтвердите свой заказ",

@@ -3,17 +3,29 @@ import "../CartSection/cartSection.css";
 import { CartContext } from "../../context/CartContext";
 import { MdDeleteForever } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 function CartSection() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const { cartItems, incrementQuantity, decrementQuantity, removeFromCart } =
     useContext(CartContext);
+  const navigate = useNavigate();
+
+  const handleConfirm = () => {
+    navigate(`/shopNow`, {
+      
+    });
+  };
 
   const getTotalPrice = () => {
     return cartItems.reduce(
       (total, item) => total + item.price * item.quantity,
       0
     );
+  };
+
+  const getTotalItems = () => {
+    return cartItems.reduce((total, item) => total + item.quantity, 0);
   };
 
   return (
@@ -77,9 +89,25 @@ function CartSection() {
                 </div>
               </div>
             ))}
-            <div className="row justify-content-end mt-4">
-              <div className="col-12 col-md-4 text-end total-price-section">
-                <h4>Total: {getTotalPrice().toFixed(2)} Azn</h4>
+
+            <div className="cartSection-bottom-section mt-4 text-center">
+              <div className="row justify-content-center align-items-center cartSection-bottom-row">
+                <div className="col-12 col-md-4 text-center cartSection-product-count">
+                  <p>
+                    {t("cartSection.totalItems")}: {getTotalItems()}
+                  </p>
+                </div>
+                <div className="col-12 col-md-4 text-center cartSection-total-price">
+                  <h4>
+                    {t("cartSection.totalPrice")}: {getTotalPrice().toFixed(2)}{" "}
+                    Azn
+                  </h4>
+                </div>
+                <div className="col-12 col-md-4 text-center cartSection-button">
+                  <button className="btn" onClick={handleConfirm}>
+                    {t("cartSection.confirmOrder")}
+                  </button>
+                </div>
               </div>
             </div>
           </>

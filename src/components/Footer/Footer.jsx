@@ -14,7 +14,7 @@ function Footer() {
             <p>
               The site was created by{" "}
               <a
-                href="https://www.linkedin.com/in/novruz-ibrahimov-80a45a288/"
+                href="https://www.linkedin.com/in/nvrzibrahimov/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -96,7 +96,10 @@
   "cartSection": {
     "shoppingCart": "Alış-veriş səbəti",
     "emptyCart": "Səbətiniz boşdur",
-    "total": "Cəmi"
+    "total": "Cəmi",
+    "totalItems" : "Məhsul sayı",
+    "totalPrice" : "Ümumi məbləğ",
+    "confirmOrder" : "Sifarişi rəsmiləşdirin"
   },
   "shopNowSection": {
     "confirmText": "Sifarişinizi Təsdiqləyin",

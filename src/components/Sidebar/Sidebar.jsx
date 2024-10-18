@@ -94,9 +94,9 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
       }`} onClick={handleSidebarClick}
     >
       <div className="sidebar-content">
-        <Link to="/" className="sidebar-logo-container">
+        <Link to="/" className="sidebar-logo-container">  
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYp-dKLlqPV0pcKyX0qo92rCSvXcNLoRMt2A&s"   
+            src="https://png.pngtree.com/png-vector/20240515/ourmid/pngtree-open-book-logo-png-image_12467719.png"   
             alt="Logo"
             className="sidebar-logo"
           />
@@ -158,7 +158,7 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
 
           <div className="text-center mt-auto bottom-part">
             <img
-              src="https://templates.iqonic.design/booksto-dist/html/assets/images/page-img/side-bkg.png"
+              src="https://static.vecteezy.com/system/resources/thumbnails/019/900/152/small_2x/old-book-watercolor-illustration-png.png"
               className="img-fluid mb-5"
             />
             <button className="btn">{t("sidebar.become")}</button>

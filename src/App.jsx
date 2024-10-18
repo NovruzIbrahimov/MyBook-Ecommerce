@@ -11,6 +11,7 @@ import Detail from "./pages/Detail/Detail";
 import Cart from "./pages/Cart/Cart";
 import ShopNow from "./pages/ShopNow/ShopNow";
 
+
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1024);
@@ -42,6 +43,8 @@ function App() {
       closeSidebar();
     }
   };
+
+
 
   return (
     <Router>

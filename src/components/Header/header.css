@@ -1,6 +1,6 @@
 .header {
-  background-color: #fbfcff;
-  border-bottom: 1px solid #ededf0;
+  background-color: #3aafa9;
+  border-bottom: 1px solid #3aafa9;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -24,7 +24,7 @@
 .search-container .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #0dd6b8;
+  border-color: #3aafa9;
 }
 
 .header-right {
@@ -43,7 +43,7 @@
 }
 
 .icons .globe-icon {
-  color: #1e90ff;
+  color: #123c69;
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease;
   position: relative;
@@ -83,7 +83,7 @@
 }
 
 .icons .envelope-icon {
-  color: #32cd32;
+  color: #feffff;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .icons .envelope-icon:hover {
-  color: #2eb82e;
+  color: #feffff;
   transform: scale(1.2);
 }
 

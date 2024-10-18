@@ -18,11 +18,11 @@
 }
 
 span.carousel-control-prev-icon {
-  background-color: #0dd6b8;
+  background-color: #3aafa9;
 }
 
 span.carousel-control-next-icon {
-  background-color: #0dd6b8;
+  background-color: #3aafa9;
 }
 
 @media (max-width: 1024px) {
@@ -43,13 +43,13 @@ span.carousel-control-next-icon {
     height: 200px !important;
   }
   span.carousel-control-prev-icon {
-    background-color: #0dd6b8;
+    background-color: #3aafa9;
     width: 20px;
     height: 20px;
   }
 
   span.carousel-control-next-icon {
-    background-color: #0dd6b8;
+    background-color: #3aafa9;
     width: 20px;
     height: 20px;
   }
