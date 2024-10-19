@@ -4,15 +4,31 @@ import { useNavigate } from "react-router-dom";
 import FlipCard from "../../components/FlipCard/FlipCard";
 import { cardsData } from "../../mocks/mockData";
 import { useTranslation } from "react-i18next";
+import { DotLoader } from "react-spinners";
+import { useLoading } from "../../context/LoadingContext";
 
 function BookCardsTwo() {
   const {t} =useTranslation();
   const navigate = useNavigate();
+  const { isLoading, startLoading, stopLoading } = useLoading();
 
   const handleViewMore = () => {
-    navigate(`/`, {});
+    startLoading();
+    setTimeout(() => {
+    navigate(`/`, {
+
+    });
+    stopLoading();
+  }, 3000);
   };
+  
   return (
+    <div>
+      {isLoading && (
+        <div className="loading-overlay">
+          <DotLoader color="#3aafa9" size={70} loading={isLoading} />
+        </div>
+      )}
     <div className="bookCardsTwo mb-4">
       <div className="container">
         <div className="container-slide d-flex justify-content-between align-items-center mb-4">
@@ -39,6 +55,7 @@ function BookCardsTwo() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }

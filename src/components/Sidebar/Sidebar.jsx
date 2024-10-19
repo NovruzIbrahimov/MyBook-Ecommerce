@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Sidebar/sidebar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   FaBook,
   FaChevronRight,
@@ -10,10 +10,14 @@ import {
 import { RiAdminLine, RiPagesLine } from "react-icons/ri";
 import { Collapse, Nav } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { useLoading } from "../../context/LoadingContext";
+import {  DotLoader } from "react-spinners";
 
 function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
   const [openItem, setOpenItem] = useState(null);
   const {t} = useTranslation();
+  const navigate = useNavigate();
+  const { isLoading, startLoading, stopLoading } = useLoading();
 
   const navItems = [
     {
@@ -21,6 +25,7 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
       icon: FaHome,
       text: t("sidebar.home"),
       to: "/",
+      isLoading: true,
       collapseId: "home-collapse",
     },
     {
@@ -28,6 +33,7 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
       icon: RiAdminLine,
       text: t("sidebar.category"),
       to: "/category",
+      isLoading: true,
       collapseId: "category-collapse",
     },
     {
@@ -35,6 +41,7 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
       icon: FaBook,
       text: t("sidebar.books"),
       to: "/book",
+      isLoading: true,
       collapseId: "book-collapse",
     },
     {
@@ -87,14 +94,36 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
     e.stopPropagation();
   };
 
+  const handleLinkClick = (to, isLoading) => {
+    if (isLoading) {
+      startLoading(); 
+    }
+
+    setTimeout(() => {
+      navigate(to); 
+      if (isLoading) {
+        stopLoading(); 
+      }
+    }, isLoading ? 1000 : 0);
+  };
+
+  const handleLogoClick = () => {
+    handleLinkClick("/", true); 
+  };
+
   return (
     <div
       className={`sidebar ${isOpen ? "open" : "closed"} ${
         isSmallScreen ? "small-screen" : ""
       }`} onClick={handleSidebarClick}
     >
+      {isLoading && (
+        <div className="loading-overlay">
+          <DotLoader color="#3aafa9" size={70} loading={isLoading} />
+        </div>
+      )}
       <div className="sidebar-content">
-        <Link to="/" className="sidebar-logo-container">  
+        <Link to="/" className="sidebar-logo-container" onClick={handleLogoClick}>  
           <img
             src="https://png.pngtree.com/png-vector/20240515/ourmid/pngtree-open-book-logo-png-image_12467719.png"   
             alt="Logo"
@@ -102,7 +131,6 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
           />
           <span className="logo-text">Eazy.az</span>
         </Link>
-
         <button className="burger-btn" onClick={toggleSidebar}>
           &#9776;
         </button>
@@ -115,8 +143,9 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
               <Nav.Item key={item.id}>
                 <Nav.Link
                   as={item.to ? Link : "div"}
-                  to={item.to}
-                  onClick={() => handleItemClick(item.id)}
+                  // to={item.to}
+                  onClick={() => handleItemClick(item.id) & handleLinkClick(item.to, item.isLoading)}
+                  
                   aria-controls={item.collapseId}
                   aria-expanded={openItem === item.id}
                   className={`d-flex align-items-center justify-content-between ${

@@ -5,14 +5,19 @@ import { MdDeleteForever } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import { useTranslation } from "react-i18next";
+import { useLoading } from "../../context/LoadingContext";
+import {  DotLoader } from "react-spinners";
 
 function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
   const { t } = useTranslation();
   const { cartItems, removeFromCart } = useContext(CartContext);
+  const { isLoading, startLoading, stopLoading } = useLoading();
 
   const navigate = useNavigate();
 
   const handleViewCart = () => {
+    startLoading();
+    setTimeout(() => {
     navigate(`/cart`, {
       state: {
         id,
@@ -22,9 +27,13 @@ function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
         price,
       },
     });
+    stopLoading();
+  }, 3000);
   };
 
   const handleShopNow = () => {
+    startLoading();
+    setTimeout(() => {
     navigate(`/shopNow`, {
       state: {
         id,
@@ -34,8 +43,17 @@ function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
         price,
       },
     });
+    stopLoading();
+  }, 3000);
   };
+
   return (
+    <div>
+      {isLoading && (
+        <div className="loading-overlay">
+          <DotLoader color="#3aafa9" size={70} loading={isLoading} />
+        </div>
+      )}
     <Modal show={show} onHide={onClose}>
       <Modal.Header closeButton>
         <Modal.Title>{t("cartModal.carts")}</Modal.Title>
@@ -75,6 +93,7 @@ function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
         </button>
       </Modal.Footer>
     </Modal>
+    </div>
   );
 }
 
