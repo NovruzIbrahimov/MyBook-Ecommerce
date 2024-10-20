@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "../DetailSection/detailSection.css";
 import { CartContext } from "../../context/CartContext";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useNotification } from "../../context/NotificationContext";
 import {
   FaFacebookF,
@@ -17,6 +17,7 @@ import { DotLoader } from "react-spinners";
 function DetailSection() {
   const { t } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
   const book = location.state;
   const { addToCart } = useContext(CartContext);
   const showNotification = useNotification();
@@ -35,6 +36,15 @@ function DetailSection() {
     }, 3000);
   };
 
+  const handleBackNavigation = (e) => {
+    e.preventDefault(); 
+    startLoading();
+    setTimeout(() => {
+      navigate("/");
+      stopLoading();
+    }, 2000); 
+  };
+
   return (
     <div>
       {isLoading && (
@@ -44,7 +54,7 @@ function DetailSection() {
       )}
       <div className="detailSection mt-4 mb-4">
         <div className="container mt-4 mb-4">
-          <Link to="/">
+          <Link to="/" onClick={handleBackNavigation}>
             <p className="link-p">{t("detailSection.back")}</p>
           </Link>
           <h4 className="detail-text pb-3">{t("detailSection.description")}</h4>

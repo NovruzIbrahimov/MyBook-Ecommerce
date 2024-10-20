@@ -12,6 +12,10 @@
   transition: margin-left 0.3s ease;
 }
 
+.app.sidebar-open {
+  transition: width 0.3s ease-in-out;
+}
+
 .sidebar-open .main-section {
   margin-left: 320px;
 }

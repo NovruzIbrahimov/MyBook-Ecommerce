@@ -7,15 +7,39 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLoading } from "../../context/LoadingContext";
+import { DotLoader } from "react-spinners";
+
+
 
 function BookDetail() {
   const {t} = useTranslation();
+  const navigate = useNavigate();
+  const { isLoading, startLoading, stopLoading } = useLoading();
+
+
+
+  const handleBackNavigation = (e) => {
+    e.preventDefault(); 
+    startLoading();
+    setTimeout(() => {
+      navigate("/");
+      stopLoading();
+    }, 2000); 
+  };
+
   return (
+    <div>
+     {isLoading && (
+        <div className="loading-overlay">
+          <DotLoader color="#3aafa9" size={70} loading={isLoading} />
+        </div>
+      )}
     <div className="bookDetail mt-4 mb-4">
       <div className="container mt-4 mb-4">
-        <Link to="/">
+        <Link to="/" onClick={handleBackNavigation}>
           <p className="link-p">{t("bookDetail.back")}</p>
         </Link>
         <h4 className="bookDetail-text pb-3">{t("bookDetail.description")}</h4>
@@ -96,6 +120,7 @@ function BookDetail() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

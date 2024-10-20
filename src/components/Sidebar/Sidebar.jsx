@@ -11,11 +11,11 @@ import { RiAdminLine, RiPagesLine } from "react-icons/ri";
 import { Collapse, Nav } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useLoading } from "../../context/LoadingContext";
-import {  DotLoader } from "react-spinners";
+import { DotLoader } from "react-spinners";
 
 function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
   const [openItem, setOpenItem] = useState(null);
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { isLoading, startLoading, stopLoading } = useLoading();
 
@@ -89,33 +89,36 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
     }
   };
 
-
   const handleSidebarClick = (e) => {
     e.stopPropagation();
   };
 
   const handleLinkClick = (to, isLoading) => {
     if (isLoading) {
-      startLoading(); 
+      startLoading();
     }
 
-    setTimeout(() => {
-      navigate(to); 
-      if (isLoading) {
-        stopLoading(); 
-      }
-    }, isLoading ? 1000 : 0);
+    setTimeout(
+      () => {
+        navigate(to);
+        if (isLoading) {
+          stopLoading();
+        }
+      },
+      isLoading ? 1000 : 0
+    );
   };
 
   const handleLogoClick = () => {
-    handleLinkClick("/", true); 
+    handleLinkClick("/", true);
   };
 
   return (
     <div
       className={`sidebar ${isOpen ? "open" : "closed"} ${
         isSmallScreen ? "small-screen" : ""
-      }`} onClick={handleSidebarClick}
+      }`}
+      onClick={handleSidebarClick}
     >
       {isLoading && (
         <div className="loading-overlay">
@@ -123,9 +126,13 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
         </div>
       )}
       <div className="sidebar-content">
-        <Link to="/" className="sidebar-logo-container" onClick={handleLogoClick}>  
+        <Link
+          to="/"
+          className="sidebar-logo-container"
+          onClick={handleLogoClick}
+        >
           <img
-            src="https://png.pngtree.com/png-vector/20240515/ourmid/pngtree-open-book-logo-png-image_12467719.png"   
+            src="https://png.pngtree.com/png-vector/20240515/ourmid/pngtree-open-book-logo-png-image_12467719.png"
             alt="Logo"
             className="sidebar-logo"
           />
@@ -144,8 +151,10 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
                 <Nav.Link
                   as={item.to ? Link : "div"}
                   // to={item.to}
-                  onClick={() => handleItemClick(item.id) & handleLinkClick(item.to, item.isLoading)}
-                  
+                  onClick={() =>
+                    handleItemClick(item.id) &
+                    handleLinkClick(item.to, item.isLoading)
+                  }
                   aria-controls={item.collapseId}
                   aria-expanded={openItem === item.id}
                   className={`d-flex align-items-center justify-content-between ${

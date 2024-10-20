@@ -1,10 +1,8 @@
 .sidebar {
-  /* width: 320px; */
   height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
-  /* transition: transform 0.3s ease, width 0.3s ease; */
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -13,16 +11,20 @@
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #feffff;
   overflow: hidden;
-  transition:  width 0.6s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .sidebar.open {
   width: 320px;
-  transition: width 0.6s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar.open .sidebar-content {
+  display: block;
 }
 
 .sidebar-content {
-  transition: width 0.6s ease-in-out;
+  transition: width 0.4s ease-in-out;
   padding: 0 11px 0 20px;
   background-color: #feffff;
 }
@@ -48,11 +50,11 @@ span.logo-text {
 
 .sidebar.open .sidebar-content {
   width: 320px;
-  transition: width 0.6s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
-.sidebar.open .sidebar-content .menu-items{
-  transition: width 0.6s ease-in-out;
+.sidebar.open .sidebar-content .menu-items {
+  transition: width 0.4s ease-in-out;
 }
 
 .sidebar.closed .sidebar-content .sidebar-logo {
@@ -267,7 +269,7 @@ div.nav-link {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
-  z-index: 9999; 
+  z-index: 9999;
 }
 
 @media (max-width: 1024px) {
@@ -282,6 +284,15 @@ div.nav-link {
     width: 250px;
     top: 62px;
     z-index: 1001;
+  }
+
+  .sidebar.closed.small-screen {
+    transform: translateX(-100%);
+    width: 0;
+    height: 100vh;
+    top: 62px;
+    z-index: 1001;
+    transition: transform 0.6s ease-in-out, width 0.6s ease-in-out;
   }
 
   .sidebar.open.small-screen .sidebar-content {
@@ -318,6 +329,13 @@ div.nav-link {
 
   .small-screen .menu-items .collapse {
     display: none;
+  }
+
+  .small-screen .menu-items img.img-fluid.mb-5 {
+    height: 90px;
+  }
+  .small-screen .menu-items button.btn {
+    padding: 5px 40px;
   }
 }
 
@@ -470,11 +488,15 @@ div.nav-link {
     transition: transform 0.6s ease-in-out, width 0.6s ease-in-out;
   }
 
+  .sidebar.closed.small-screen .sidebar-content {
+    opacity: 0;
+  }
+
   .sidebar.open .vertical-icon {
     margin-right: 5px;
   }
 
-  .sidebar.open .arrow{
+  .sidebar.open .arrow {
     margin-right: 0;
   }
 
@@ -533,7 +555,7 @@ div.nav-link {
   .small-screen .sidebar-content .menu-items {
     margin-top: 23px;
   }
-  
+
   .small-screen .burger-btn {
     display: none;
   }

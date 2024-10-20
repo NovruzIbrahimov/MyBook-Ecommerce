@@ -11,7 +11,6 @@ import Detail from "./pages/Detail/Detail";
 import Cart from "./pages/Cart/Cart";
 import ShopNow from "./pages/ShopNow/ShopNow";
 
-
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1024);
@@ -21,7 +20,7 @@ function App() {
   };
 
   const closeSidebar = () => {
-    setIsSidebarOpen(false); 
+    setIsSidebarOpen(false);
   };
 
   useEffect(() => {
@@ -44,8 +43,6 @@ function App() {
     }
   };
 
-
-
   return (
     <Router>
       <div
@@ -63,7 +60,7 @@ function App() {
           <Header toggleSidebar={toggleSidebar} isSmallScreen={isSmallScreen} />
           <div className="content">
             <Routes>
-              <Route path="/" element={<Home/>} />
+              <Route path="/" element={<Home />} />
               <Route path="/category" element={<Category />} />
               <Route path="/book" element={<Book />} />
               <Route path="/detail/:id" element={<Detail />} />
