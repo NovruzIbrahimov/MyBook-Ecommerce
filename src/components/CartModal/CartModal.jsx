@@ -28,7 +28,8 @@ function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
       },
     });
     stopLoading();
-  }, 3000);
+    onClose();
+  }, 500);
   };
 
   const handleShopNow = () => {
@@ -44,7 +45,16 @@ function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
       },
     });
     stopLoading();
-  }, 3000);
+    onClose();
+  }, 500);
+  };
+
+  const handleRemoveItem = (itemId) => {
+    removeFromCart(itemId);
+
+    if (cartItems.length === 1) {
+      onClose();
+    }
   };
 
   return (
@@ -76,7 +86,7 @@ function CartModal({ show, onClose, id, imageUrl, title1, title2, price }) {
               </div>
               <button
                 className="remove"
-                onClick={() => removeFromCart(item.id)}
+                onClick={() => handleRemoveItem(item.id)}
               >
                 <MdDeleteForever />
               </button>

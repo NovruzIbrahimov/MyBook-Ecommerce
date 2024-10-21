@@ -21,7 +21,7 @@ function CartSection() {
         
       });
       stopLoading();
-    }, 3000);
+    }, 500);
   };
 
   const getTotalPrice = () => {

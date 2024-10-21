@@ -19,7 +19,7 @@ function CategoryCardTwo() {
       
     });
     stopLoading();
-    }, 3000);
+    }, 500);
   };
   
   return (

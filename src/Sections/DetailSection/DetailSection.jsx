@@ -30,10 +30,10 @@ function DetailSection() {
   const handleAddToCart = () => {
     startLoading();
     addToCart(book);
-    showNotification("Kitab səbətə əlavə edildi!", 1000);
+    showNotification("Kitab səbətə əlavə edildi!", 500);
     setTimeout(() => {
       stopLoading();
-    }, 3000);
+    }, 500);
   };
 
   const handleBackNavigation = (e) => {
@@ -42,7 +42,7 @@ function DetailSection() {
     setTimeout(() => {
       navigate("/");
       stopLoading();
-    }, 2000); 
+    }, 500); 
   };
 
   return (

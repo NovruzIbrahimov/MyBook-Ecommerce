@@ -11,7 +11,7 @@ import { RiAdminLine, RiPagesLine } from "react-icons/ri";
 import { Collapse, Nav } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useLoading } from "../../context/LoadingContext";
-import { DotLoader } from "react-spinners";
+import { BounceLoader } from "react-spinners";
 
 function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
   const [openItem, setOpenItem] = useState(null);
@@ -97,15 +97,16 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
     if (isLoading) {
       startLoading();
     }
-
     setTimeout(
       () => {
         navigate(to);
         if (isLoading) {
           stopLoading();
         }
-      },
-      isLoading ? 1000 : 0
+        if (isSmallScreen) {
+          toggleSidebar();
+        }
+      }, isLoading ? 500 : 0
     );
   };
 
@@ -122,7 +123,7 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
     >
       {isLoading && (
         <div className="loading-overlay">
-          <DotLoader color="#3aafa9" size={70} loading={isLoading} />
+          <BounceLoader color="#3aafa9" size={70} loading={isLoading} />
         </div>
       )}
       <div className="sidebar-content">

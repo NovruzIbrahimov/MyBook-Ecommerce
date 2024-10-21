@@ -33,17 +33,16 @@ function FlipCard({ id, imageUrl, title1, title2, price, quantity }) {
         },
       });
       stopLoading();
-    }, 3000);
+    }, 500);
   };
 
   const handleAddToCart = (e) => {
-    e.stopPropagation();
     startLoading();
     addToCart({ id, imageUrl, title1, title2, price, quantity });
     showNotification("Kitab səbətə əlavə edildi!", 1000);
     setTimeout(() => {
       stopLoading();
-    }, 3000);
+    }, 500);
   };
 
   return (

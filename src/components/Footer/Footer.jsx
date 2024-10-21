@@ -12,7 +12,7 @@ function Footer() {
 
           <div className="col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-center footer-right">
             <p>
-              The site was created by{" "}
+               Created by{" "}
               <a
                 href="https://www.linkedin.com/in/nvrzibrahimov/"
                 target="_blank"

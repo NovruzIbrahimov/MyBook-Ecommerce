@@ -27,7 +27,7 @@ function BookDetail() {
     setTimeout(() => {
       navigate("/");
       stopLoading();
-    }, 2000); 
+    }, 500); 
   };
 
   return (

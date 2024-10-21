@@ -19,7 +19,7 @@ function BookCardsOne() {
 
     });
     stopLoading();
-  }, 3000);
+  }, 500);
   };
   return (
     <div>
