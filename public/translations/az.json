@@ -41,7 +41,7 @@
     "signOut": "Çıxış edin"
   },
   "cartModal": {
-    "carts": "Bütün kartlar",
+    "carts": "Seçilmiş məhsullar",
     "cart": "Səbətiniz boşdur",
     "view": "Səbətə baxmaq",
     "shop": "İndi alış-veriş et"
@@ -130,5 +130,30 @@
     "marcus": "Marcus Tullius Cicero",
     "ready": "Dalmağa hazırsınız?",
     "start": "Oxu səyahətinizə başlayın"
+  },
+  "registerSection": {
+    "register": "Qeydiyyat",
+    "label": "Ad",
+    "placeholder": "Adı daxil edin",
+    "labelSur": "Soyad",
+    "surPlaceholder": "Soyadı daxil edin",
+    "labelEmail": "E-poçt",
+    "emailPlaceholder": "E-poçtu daxil edin",
+    "labelPassword": "Şifrə",
+    "passwordPlaceholder": "Şifrəni daxil edin",
+    "signUpButton": "Qeydiyyatdan keç",
+    "error": "Bütün sahələr tələb olunur.",
+    "success": "Qeydiyyat uğurlu oldu!"
+  },
+  "joinSection": {
+    "join": "Daxil ol",
+    "email": "E-poçt",
+    "emailPlaceholder": "E-poçtu daxil edin",
+    "password": "Şifrə",
+    "passwordPlaceholder": "Şifrəni daxil edin",
+    "joinButton": "Daxil ol",
+    "error": "Zəhmət olmasa hər iki sahəni doldurun.",
+    "success": "Giriş uğurlu!",
+    "incorrect": "Yanlış e-poçt və ya parol."
   }
 }

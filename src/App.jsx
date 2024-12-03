@@ -10,6 +10,8 @@ import Home from "./pages/Home/Home";
 import Detail from "./pages/Detail/Detail";
 import Cart from "./pages/Cart/Cart";
 import ShopNow from "./pages/ShopNow/ShopNow";
+import Join from "./pages/Join/Join";
+import Register from "./pages/Register/Register";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -66,6 +68,8 @@ function App() {
               <Route path="/detail/:id" element={<Detail />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/shopNow" element={<ShopNow />} />
+              <Route path="/join" element={<Join />} />
+              <Route path="/register" element={<Register />} />
             </Routes>
           </div>
           <Footer />

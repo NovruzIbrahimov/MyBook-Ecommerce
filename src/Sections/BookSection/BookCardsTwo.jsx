@@ -15,7 +15,7 @@ function BookCardsTwo() {
   const handleViewMore = () => {
     startLoading();
     setTimeout(() => {
-    navigate(`/`, {
+    navigate(`/book`, {
 
     });
     stopLoading();

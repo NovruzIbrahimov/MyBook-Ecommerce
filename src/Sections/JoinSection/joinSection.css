@@ -1,0 +1,126 @@
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login {
+  width: 100%;
+  height: 600px;
+}
+
+a {
+  text-decoration: none;
+  color: #edb932;
+}
+
+button.btn.btn-submit {
+  background-color: #3aafa9;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.btn-one {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #edb932 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Roboto", sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+.btn-one:focus {
+  box-shadow: #edb932 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #edb932 0 -3px 0 inset;
+}
+
+.btn-one:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #edb932 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn-one:active {
+  box-shadow: #edb932 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 425px) {
+  .form-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 393px) {
+  .login{
+    height: 470px;
+  }
+
+  .login .form-container {
+    padding: 5px 15px 15px 15px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  .btn-one {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  input {
+    font-size: 0.8rem;
+  }
+
+  .btn-one {
+    font-size: 0.8rem;
+  }
+}

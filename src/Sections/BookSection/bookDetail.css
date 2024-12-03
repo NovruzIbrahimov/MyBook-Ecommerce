@@ -73,7 +73,7 @@ p.text-muted-add strong {
   color: #3aafa9;
 }
 
-button.btn-one {
+.bookDetail-right-description .book-detail button.btn {
   color: #ffffff;
   background-color: #3aafa9;
   border: 1px solid #3aafa9;

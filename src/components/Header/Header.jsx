@@ -49,41 +49,50 @@ function Header({ toggleSidebar, isSmallScreen }) {
               &#9776;
             </button>
           )}
-          <div className="search-container">
+          <div className="search-container d-flex align-items-center">
             <input
               type="text"
               className="form-control"
               placeholder={t("header.placeholder")}
             />
+            <button className="search-btn">Search</button>
           </div>
 
           <div className="header-right">
             <div className="icons">
-              <FaGlobe className="globe-icon" onClick={() => setShowLangOptions(!showLangOptions)}/>
+              <FaGlobe
+                className="globe-icon"
+                onClick={() => setShowLangOptions(!showLangOptions)}
+              />
               {showLangOptions && (
-                  <div className="language-options">
-                    {languages.map((lang) => (
-                      <img
-                        key={lang.code}
-                        src={lang.flag}
-                        alt={`Flag of ${lang.code}`}
-                        className="language-option"
-                        onClick={() => changeLanguage(lang.code)}
-                        style={{
-                          cursor: "pointer",
-                          width: "24px",
-                          height: "19px",
-                          margin: "0 5px",
-                        }}
-                      />
-                    ))}
-                  </div>
-                )}
+                <div className="language-options">
+                  {languages.map((lang) => (
+                    <img
+                      key={lang.code}
+                      src={lang.flag}
+                      alt={`Flag of ${lang.code}`}
+                      className="language-option"
+                      onClick={() => changeLanguage(lang.code)}
+                      style={{
+                        cursor: "pointer",
+                        width: "24px",
+                        height: "19px",
+                        margin: "0 5px",
+                      }}
+                    />
+                  ))}
+                </div>
+              )}
               <FaBell className="bell-icon" />
               <FaEnvelope className="envelope-icon" />
               <div className="cart-icon-container">
-                <FaShoppingCart className="shopping-icon" onClick={handleCartClick} />
-                {cartItemCount > 0 && <span className="cart-count">{cartItemCount}</span>}
+                <FaShoppingCart
+                  className="shopping-icon"
+                  onClick={handleCartClick}
+                />
+                {cartItemCount > 0 && (
+                  <span className="cart-count">{cartItemCount}</span>
+                )}
               </div>
             </div>
 

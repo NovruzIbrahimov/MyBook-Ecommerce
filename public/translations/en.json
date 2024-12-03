@@ -41,7 +41,7 @@
     "signOut": "Sign out"
   },
   "cartModal": {
-    "carts": "All Carts",
+    "carts": "Selected products",
     "cart": "Your cart is empty",
     "view": "View Cart",
     "shop": "Shop now"
@@ -131,6 +131,30 @@
     "marcus": "Marcus Tullius Cicero",
     "ready": "Ready to Dive In?",
     "start": "Start Your Reading Journey"
+  },
+  "registerSection": {
+    "register": "Registration",
+    "label": "Name",
+    "placeholder": "Enter the name",
+    "labelSur": "Last name",
+    "surPlaceholder": "Enter last name",
+    "labelEmail": "E-mail",
+    "emailPlaceholder": "Enter your e-mail",
+    "labelPassword": "Password",
+    "passwordPlaceholder": "Enter the password",
+    "signUpButton": "Sign up",
+    "error": "All fields are required.",
+    "success": "Registration successful!"
+  },
+  "joinSection": {
+    "join": "Sign in",
+    "email": "E-mail",
+    "emailPlaceholder": "Enter your e-mail",
+    "password": "Password",
+    "passwordPlaceholder": "Enter the password",
+    "joinButton": "Sign in",
+    "error": "Please fill in both fields.",
+    "success": "Login successful!",
+    "incorrect": "Incorrect email or password."
   }
-  
 }

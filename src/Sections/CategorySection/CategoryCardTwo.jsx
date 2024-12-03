@@ -15,7 +15,7 @@ function CategoryCardTwo() {
   const handleViewMore = () => {
     startLoading();
     setTimeout(() => {
-    navigate(`/`, {
+    navigate(`/book`, {
       
     });
     stopLoading();

@@ -1,13 +1,13 @@
 import React from "react";
-import "../BookSection/bookCardsOne.css";
+import "../DetailSection/detailCardOne.css";
 import { useNavigate } from "react-router-dom";
-import FlipCard from "../../components/FlipCard/FlipCard";
-import { cardsData } from "../../mocks/mockData";
-import { useTranslation } from "react-i18next";
-import {  DotLoader } from "react-spinners";
 import { useLoading } from "../../context/LoadingContext";
+import { useTranslation } from "react-i18next";
+import FlipCard from "../../components/FlipCard/FlipCard";
+import { DotLoader } from "react-spinners";
+import { cardsData } from "../../mocks/mockData";
 
-function BookCardsOne() {
+function DetailCardOne() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { isLoading, startLoading, stopLoading } = useLoading();
@@ -15,11 +15,9 @@ function BookCardsOne() {
   const handleViewMore = () => {
     startLoading();
     setTimeout(() => {
-    navigate(`/book`, {
-
-    });
-    stopLoading();
-  }, 500);
+      navigate(`/book`, {});
+      stopLoading();
+    }, 500);
   };
   return (
     <div>
@@ -28,7 +26,7 @@ function BookCardsOne() {
           <DotLoader color="#3aafa9" size={70} loading={isLoading} />
         </div>
       )}
-      <div className="bookCardsOne mb-4">
+      <div className="detailCardOne mb-4">
         <div className="container">
           <div className="container-slide d-flex justify-content-between align-items-center mb-4">
             <div className="left-text">
@@ -62,4 +60,4 @@ function BookCardsOne() {
   );
 }
 
-export default BookCardsOne;
+export default DetailCardOne;

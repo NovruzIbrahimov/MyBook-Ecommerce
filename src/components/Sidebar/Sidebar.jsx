@@ -114,6 +114,13 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
     handleLinkClick("/", true);
   };
 
+  const handleJoinClick = () => {
+    navigate("/register"); 
+    if (isSmallScreen) {
+      toggleSidebar(); 
+    }
+  };
+
   return (
     <div
       className={`sidebar ${isOpen ? "open" : "closed"} ${
@@ -200,7 +207,7 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
               src="https://static.vecteezy.com/system/resources/thumbnails/019/900/152/small_2x/old-book-watercolor-illustration-png.png"
               className="img-fluid mb-5"
             />
-            <button className="btn">{t("sidebar.become")}</button>
+            <button className="btn" onClick={handleJoinClick}>{t("sidebar.become")}</button>
           </div>
         </div>
       </div>

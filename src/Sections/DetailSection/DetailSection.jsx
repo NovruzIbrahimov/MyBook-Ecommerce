@@ -109,16 +109,15 @@ function DetailSection() {
               <p className="text-muted-add">
                 <strong>{t("detailSection.author")}:</strong> {book.title2}
               </p>
-              <div className="d-flex gap-2 mt-2">
-                <button className="btn-one me-2" onClick={handleAddToCart}>
+              <div className="d-flex gap-2 mt-2 book-detail">
+                <button className="btn me-2" onClick={handleAddToCart}>
                   {t("detailSection.add")}
                 </button>
-                <button className="btn-two">{t("detailSection.read")}</button>
               </div>
               <div className="mt-3">
-                <button className="btn-three me-2">
+                {/* <button className="btn-three me-2">
                   {t("detailSection.wishlist")}
-                </button>
+                </button> */}
               </div>
               <div className="mt-3">
                 <span className="icon">{t("detailSection.share")}:</span>

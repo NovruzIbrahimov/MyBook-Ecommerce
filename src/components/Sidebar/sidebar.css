@@ -35,12 +35,27 @@
   align-items: center;
 }
 
+.sidebar-logo-container:hover{
+  text-decoration: none;
+}
+
 .sidebar-logo-container .logo-text {
   text-decoration: none;
 }
 
 span.logo-text {
   color: #3aafa9;
+  font-size: 18px;
+  margin-top: 5px;
+  font-family: "Macondo", cursive;
+  font-weight: 600;
+  letter-spacing: 1;
+  font-style: normal;
+  text-decoration: none !important;
+}
+
+span.logo-text:hover {
+  text-decoration: none;
 }
 
 .sidebar.closed {
@@ -161,6 +176,11 @@ a.nav-link {
   padding: 8px 0 8px 0;
   margin: 12px 0 0 0;
   color: #3aafa9;
+  text-decoration: none;
+}
+
+a.nav-link:hover{
+  text-decoration: none;
 }
 
 div.nav-link {
@@ -252,6 +272,14 @@ div.nav-link {
 }
 
 .bottom-part button.btn {
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #3aafa9;
+  padding: 7px 50px;
+  border: 1px solid #3aafa9;
+}
+
+.bottom-part button.btn:focus {
   font-size: 15px;
   color: #ffffff;
   background-color: #3aafa9;

@@ -41,7 +41,7 @@
     "signOut": "Oturumu Kapat"
   },
   "cartModal": {
-    "carts": "Tüm kartlar",
+    "carts": "Seçilen ürünler",
     "cart": "Sepetiniz boş",
     "view": "Kitaba bak",
     "shop": "Şimdi alışveriş yap"
@@ -130,5 +130,30 @@
     "marcus": "Marcus Tullius Cicero",
     "ready": "Dalmaya Hazır mısınız?",
     "start": "Okuma Yolculuğunuza Başlayın"
+  },
+  "registerSection": {
+    "register": "Kayıt",
+    "label": "İsim",
+    "placeholder": "Adı girin",
+    "labelSur": "Soy isim",
+    "surPlaceholder": "Soyadını girin",
+    "labelEmail": "E-posta",
+    "emailPlaceholder": "E-postanızı girin",
+    "labelPassword": "Şifre",
+    "passwordPlaceholder": "Şifrenizi girin",
+    "signUpButton": "Üye olmak",
+    "error": "Tüm alanlar zorunludur.",
+    "success": "Kayıt başarılı!"
+  },
+  "joinSection": {
+    "join": "Kayıt olmak",
+    "email": "E-posta",
+    "emailPlaceholder": "E-postanızı girin",
+    "password": "Şifre",
+    "passwordPlaceholder": "Şifrenizi girin",
+    "joinButton": "Kayıt olmak",
+    "error": "Lütfen her iki alanı da doldurun.",
+    "success": "Giriş başarılı!",
+    "incorrect": "Yanlış e-posta veya şifre."
   }
 }

@@ -66,7 +66,7 @@ p.text-muted-add strong {
   color: #0dd6b8;
 }
 
-button.btn-one {
+.detail-right-description .book-detail button.btn {
   color: #ffffff;
   background-color: #3aafa9;
   border: 1px solid #3aafa9;
@@ -107,6 +107,7 @@ span.icon {
   border-radius: 50%;
   padding: 8px 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .btn-link-twitter {
@@ -119,6 +120,7 @@ span.icon {
   padding: 8px 10px;
   text-align: center;
   margin-left: 0;
+  cursor: pointer;
 }
 
 .btn-link-youtube {
@@ -131,6 +133,7 @@ span.icon {
   padding: 8px 10px;
   text-align: center;
   margin-left: 0;
+  cursor: pointer;
 }
 
 .btn-link-pinterest {
@@ -143,6 +146,7 @@ span.icon {
   padding: 8px 10px;
   text-align: center;
   margin-left: 0;
+  cursor: pointer;
 }
 
 .alert {
