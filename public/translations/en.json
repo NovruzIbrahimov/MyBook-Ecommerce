@@ -44,7 +44,9 @@
     "carts": "Selected products",
     "cart": "Your cart is empty",
     "view": "View Cart",
-    "shop": "Shop now"
+    "shop": "Shop now",
+    "quantity": "Product count",
+    "emptyCartMessage": "Your cart is empty! Please add items before shopping."
   },
   "bookDetail": {
     "back": "Back to home page",

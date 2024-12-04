@@ -44,7 +44,9 @@
     "carts": "Seçilen ürünler",
     "cart": "Sepetiniz boş",
     "view": "Kitaba bak",
-    "shop": "Şimdi alışveriş yap"
+    "shop": "Şimdi alışveriş yap",
+    "quantity": "Ürün sayısı",
+    "emptyCartMessage": "Sepetiniz boş! Lütfen alışverişten önce ürün ekleyin."
   },
   "bookDetail": {
     "back": "Ana sayfaya dön",
