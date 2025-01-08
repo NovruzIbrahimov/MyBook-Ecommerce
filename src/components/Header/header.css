@@ -201,6 +201,10 @@ div.search-container.d-flex.align-items-center {
     justify-content: space-between;
   }
 
+  a.sidebar-logo-container {
+    display: none !important;
+  }
+
   .search-container {
     max-width: 300px;
   }
@@ -215,6 +219,10 @@ div.search-container.d-flex.align-items-center {
 
 @media (max-width: 768px) {
   div.search-container.d-flex.align-items-center {
+    display: none !important;
+  }
+
+  a.sidebar-logo-container {
     display: none !important;
   }
 
@@ -249,6 +257,10 @@ div.search-container.d-flex.align-items-center {
 
 @media (max-width: 425px) {
   .search-container {
+    display: none !important;
+  }
+
+  a.sidebar-logo-container {
     display: none !important;
   }
 

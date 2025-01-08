@@ -11,10 +11,14 @@ import EnglandFlag from "../../assets/flags/englandd.png";
 import RussiaFlag from "../../assets/flags/rus.png";
 import TurkeyFlag from "../../assets/flags/turkey.png";
 import { useTranslation } from "react-i18next";
+import { Link, useNavigate } from "react-router-dom";
+import { useLoading } from "../../context/LoadingContext";
 
 function Header({ toggleSidebar, isSmallScreen }) {
   const { t } = useTranslation();
   const [showLangOptions, setShowLangOptions] = useState(false);
+  const navigate = useNavigate();
+  const { isLoading, startLoading, stopLoading } = useLoading();
 
   const languages = [
     { code: "az", flag: AzerbaijanFlag },
@@ -39,11 +43,59 @@ function Header({ toggleSidebar, isSmallScreen }) {
   const handleProfileClick = () => setShowProfileModal(true);
   const closeCartModal = () => setShowCartModal(false);
   const closeProfileModal = () => setShowProfileModal(false);
+  const handleLinkClick = (to, isLoading) => {
+    if (isLoading) {
+      startLoading();
+    }
+    setTimeout(
+      () => {
+        navigate(to);
+        if (isLoading) {
+          stopLoading();
+        }
+        if (isSmallScreen) {
+          toggleSidebar();
+        }
+      },
+      isLoading ? 500 : 0
+    );
+  };
+  const handleLogoClick = () => {
+    handleLinkClick("/", true);
+  };
 
   return (
     <>
       <header className="header">
         <div className="container">
+          <Link
+            to="/"
+            className="sidebar-logo-container d-flex align-items-center"
+            onClick={handleLogoClick}
+            style={{ textDecoration: "none", color: "inherit" }} // Keep styling consistent
+          >
+            <img
+              src="https://png.pngtree.com/png-vector/20240515/ourmid/pngtree-open-book-logo-png-image_12467719.png"
+              alt="Logo"
+              className="sidebar-logo"
+              style={{
+                width: "40px",
+                height: "40px",
+                marginRight: "10px",
+              }}
+            />
+            <span
+              className="logo-text"
+              style={{
+                fontWeight: "bold",
+                fontSize: "1.2rem",
+                fontFamily: "Macondo",
+                color: "#fff",
+              }}
+            >
+              Eazy.az
+            </span>
+          </Link>
           {isSmallScreen && (
             <button className="burger" onClick={toggleSidebar}>
               &#9776;
