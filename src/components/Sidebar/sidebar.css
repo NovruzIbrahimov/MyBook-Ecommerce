@@ -581,7 +581,7 @@ div.nav-link {
     display: block;
   }
   .small-screen .sidebar-content .menu-items {
-    margin-top: 23px;
+    margin-top: 66px;
   }
 
   .small-screen .burger-btn {
@@ -626,6 +626,6 @@ div.nav-link {
     display: none;
   }
   .small-screen .sidebar-content .menu-items {
-    margin-top: 10px;
+    margin-top: -7px;
   }
 }

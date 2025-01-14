@@ -72,7 +72,7 @@ function Header({ toggleSidebar, isSmallScreen }) {
             to="/"
             className="sidebar-logo-container d-flex align-items-center"
             onClick={handleLogoClick}
-            style={{ textDecoration: "none", color: "inherit" }} // Keep styling consistent
+            style={{ textDecoration: "none", color: "inherit" }} 
           >
             <img
               src="https://png.pngtree.com/png-vector/20240515/ourmid/pngtree-open-book-logo-png-image_12467719.png"

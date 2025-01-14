@@ -15,6 +15,7 @@ import { BounceLoader } from "react-spinners";
 
 function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
   const [openItem, setOpenItem] = useState(null);
+  const [joinButtonLoading, setJoinButtonLoading] = useState(false);
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { isLoading, startLoading, stopLoading } = useLoading();
@@ -106,7 +107,8 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
         if (isSmallScreen) {
           toggleSidebar();
         }
-      }, isLoading ? 500 : 0
+      },
+      isLoading ? 500 : 0
     );
   };
 
@@ -114,11 +116,22 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
     handleLinkClick("/", true);
   };
 
+  // const handleJoinClick = () => {
+  //   navigate("/register");
+  //   if (isSmallScreen) {
+  //     toggleSidebar();
+  //   }
+  // };
+
   const handleJoinClick = () => {
-    navigate("/register"); 
-    if (isSmallScreen) {
-      toggleSidebar(); 
-    }
+    setJoinButtonLoading(true);
+    setTimeout(() => {
+      navigate("/register");
+      setJoinButtonLoading(false);
+      if (isSmallScreen) {
+        toggleSidebar();
+      }
+    }, 2000);
   };
 
   return (
@@ -128,7 +141,7 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
       }`}
       onClick={handleSidebarClick}
     >
-      {isLoading && (
+      {(isLoading || joinButtonLoading) && (
         <div className="loading-overlay">
           <BounceLoader color="#3aafa9" size={70} loading={isLoading} />
         </div>
@@ -207,7 +220,13 @@ function Sidebar({ isOpen, toggleSidebar, isSmallScreen }) {
               src="https://static.vecteezy.com/system/resources/thumbnails/019/900/152/small_2x/old-book-watercolor-illustration-png.png"
               className="img-fluid mb-5"
             />
-            <button className="btn" onClick={handleJoinClick}>{t("sidebar.become")}</button>
+            <button
+              className="btn"
+              onClick={handleJoinClick}
+              disabled={joinButtonLoading}
+            >
+              {joinButtonLoading ? t("sidebar.loading") : t("sidebar.become")}
+            </button>
           </div>
         </div>
       </div>
